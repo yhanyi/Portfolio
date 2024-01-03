@@ -10,7 +10,7 @@ To run locally:
 
 1. Clone the repo onto your local machine.
 ```bash
-git clone git@github.com:yhanyi/yhanyi-portfolio.git
+git clone git@github.com:yhanyi/portfolio.git
 ```
 2. Open the folder.
 ```bash
