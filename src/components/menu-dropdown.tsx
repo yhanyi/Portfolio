@@ -2,11 +2,8 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { links } from "@/lib/links-data";
-import React, { Dispatch, SetStateAction, useState } from "react";
+import React, { Dispatch, SetStateAction, useEffect, useRef, useState } from "react";
 import { useActiveSectionContext } from './active-section-context';
-
-type test = typeof links[0]
 
 type OptionProps = {
     text: "Home" | "About" | "Projects",
@@ -41,8 +38,23 @@ export default function MenuDropdown() {
 
     const [open, setOpen] = useState(false);
 
+    let menuRef = useRef<HTMLDivElement | null>(null);
+
+    useEffect(() => {
+        let handler = (e: { target: any; }) => {
+            if (menuRef.current && !menuRef.current.contains(e.target)) {
+                setOpen(false);
+            }
+        };
+        document.addEventListener("mousedown", handler);
+
+        return () => {
+            document.removeEventListener("mousedown", handler);
+        }
+    }, [menuRef]);
+
     return (
-        <div className="md:hidden flex items-center justify-center">
+        <div className="md:hidden flex items-center justify-center" ref={menuRef}>
             <motion.div animate={open ? "open" : "closed"} className="relative">
                 <button
                 className="z-10 flex flex-col justify-center rounded-xl items-center duration-200 p-1 w-[3rem] h-[3rem] bg-opacity-80 backgroup-blur-[0.5rem] border-opacity-40 shadow-2xl bg-white text-black dark:bg-black dark:text-white hover:scale-105 active:scale-100"
@@ -63,8 +75,8 @@ export default function MenuDropdown() {
                     <Option setOpen={setOpen} text="Home" href="/" />
                     <Option setOpen={setOpen} text="About" href="/about" />
                     <Option setOpen={setOpen} text="Projects" href="/projects" />
-                </motion.ul>
 
+                </motion.ul>
             </motion.div>
         </div>
     )

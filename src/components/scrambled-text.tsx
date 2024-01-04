@@ -67,7 +67,7 @@ export default function ScrambledText({text, speed=50, className=""}: ScrambledT
     }
 
     return (
-        <div className="flex items-start justify-center my-4">
+        <div className="flex items-start justify-center">
             <Scrambler className={className} />
         </div>
     );

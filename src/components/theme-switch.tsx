@@ -1,6 +1,5 @@
 "use client";
 
-
 import React from 'react';
 import { SunIcon, MoonIcon } from './animated-theme-icons';
 import { useTheme } from './theme-context';
