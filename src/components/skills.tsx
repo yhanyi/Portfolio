@@ -7,14 +7,15 @@ import Image from 'next/image';
 import { skillsData } from '@/lib/skills-data';
 
 type SkillItemProps = {
-    src: string;
-    width: number;
-    height: number;
-    title: string;
-    index: number;
+    srclight: string,
+    srcdark: string,
+    width: number,
+    height: number,
+    title: string,
+    index: number,
 }
 
-const SkillItem = ({src, width, height, title, index}: SkillItemProps) => {
+const SkillItem = ({srclight, srcdark, width, height, title, index}: SkillItemProps) => {
     const {ref, inView} = useInView({
         triggerOnce: false
     })
@@ -39,11 +40,18 @@ const SkillItem = ({src, width, height, title, index}: SkillItemProps) => {
 
             <div className="group flex justify-center p-8 rounded-md drop-shadow-xl hover:translate-y-5 transition-all duration-300">
                 <Image 
-                src={src}
+                src={srclight}
                 width={width}
                 height={height}
                 alt="Skill Image"
-                className="flex items-center justify-center"
+                className="flex dark:hidden items-center justify-center"
+                />
+                <Image 
+                src={srcdark}
+                width={width}
+                height={height}
+                alt="Skill Image"
+                className="hidden dark:flex items-center justify-center"
                 />
                 <span
                 className="p-2 bg-dark dark:bg-light rounded-xl font-semibold flex text-center absolute opacity-0 group-hover:opacity-100 text-light dark:text-dark group-hover:-translate-y-12 duration-300"
@@ -84,7 +92,8 @@ export default function Skills() {
                     {skillsData.map((item, index) => (
                         <SkillItem
                         key={index}
-                        src={item.image}
+                        srclight={item.imagelight}
+                        srcdark={item.imagedark}
                         title={item.title}
                         width={dimension}
                         height={dimension}

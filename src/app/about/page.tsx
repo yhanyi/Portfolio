@@ -17,7 +17,7 @@ export default function Home() {
     return (
         <main className="mt-28 sm:mt-36 flex flex-col px-4">
             <ScrambledText text="About Me" speed={100} className="" />
-            <div className="flex xl:flex-row flex-col overflow-hidden gap-10 justify-center">
+            <div className="flex xl:flex-row flex-col overflow-hidden gap-10 justify-center items-center">
                 <div className="xl:w-1/3 md:h-[550px] h-[350px]">
                     <EarthCanvas /> 
                 </div>
