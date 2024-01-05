@@ -1,27 +1,63 @@
-import corpcommentImg from "../../public/project-images/corpcomment.png";
-import rmtdevImg from "../../public/project-images/rmtdev.png";
-import wordanalyticsImg from "../../public/project-images/wordanalytics.png";
+import portfolio1 from "/public/project-images/portfolio-1.png";
+import portfolio2 from "/public/project-images/portfolio-2.png";
+import portfolio3 from "/public/project-images/portfolio-3.png";
+import cnndigits from "/public/project-images/cnn-digits.png";
+import akparticles from "/public/project-images/arknights-particles.png";
+import portfolio4 from "/public/project-images/portfolio-4.png";
 
 export const projectsData = [
     {
-      title: "CorpComment",
+      title: "Personal Portfolio",
       description:
-        "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-      tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-      imageUrl: corpcommentImg,
+        "Migrated my Javascript portfolio to Typescript, including context providers and hooks with greater focus on extendability and responsiveness, as well as simple ThreeJS concepts.",
+      tags: ["NextJS", "Tailwind", "Typescript", "ThreeJS"],
+      imageUrl: portfolio4,
+      demoLink: "https://yhanyi.vercel.app/",
+      githubLink: "https://github.com/yhanyi/portfolio"
     },
     {
-      title: "rmtDev",
+      title: "Arknights Particles",
       description:
-        "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-      tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-      imageUrl: rmtdevImg,
+        "Refactored old ThreeJS boilerplate code to reverse-engineer a particle effect from a game website. Passion project built while learning basic ThreeJS during freshman winter break.",
+      tags: ["ThreeJS", "GLSL", "Typescript", "NextJS", "React"],
+      imageUrl: akparticles,
+      demoLink: "https://yeohhanyi-arknights-particles.vercel.app/",
+      githubLink: "https://github.com/yhanyi/arknights-particles"
     },
     {
-      title: "Word Analytics",
+      title: "Digits Predictor",
       description:
-        "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-      tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-      imageUrl: wordanalyticsImg,
+        "A simple webapp that takes a user input drawn on a canvas object, converts it to features to be predicted by a pre-trained Tensorflow model, and Chart.js plots the confidence of the model.",
+      tags: ["Tensorflow", "Chart.js", "HTML", "CSS"],
+      imageUrl: cnndigits,
+      demoLink: "https://yhanyi.github.io/cnn-digits/",
+      githubLink: "https://github.com/yhanyi/cnn-digits"
     },
+    {
+        title: "Typescript Portfolio",
+        description:
+          "A single-page website with NextJS, built while learning Typescript and learning about context providers.",
+        tags: ["Typescript", "React", "NextJS", "Tailwind"],
+        imageUrl: portfolio3,
+        demoLink: "https://yhy-react-v2.vercel.app/",
+        githubLink: "https://github.com/yhanyi/react-portfolio-v2"
+      },
+      {
+        title: "Javascript Portfolio",
+        description:
+          "First multi-page website using the NextJS framework in React, using Javascript and learning more about basic React hooks.",
+        tags: ["Javascript", "React", "NextJS", "Tailwind"],
+        imageUrl: portfolio2,
+        demoLink: "https://yhy-react-v1.vercel.app/",
+        githubLink: "https://github.com/yhanyi/react-portfolio-v1"
+      },
+      {
+        title: "HTML & CSS Portfolio",
+        description:
+          "My first website, built while learning basic HTML, CSS and Javascript.",
+        tags: ["HTML", "CSS", "Javascript"],
+        imageUrl: portfolio1,
+        demoLink: "https://yhanyi.github.io",
+        githubLink: "https://github.com/yhanyi/yhanyi.github.io"
+      },
 ] as const;

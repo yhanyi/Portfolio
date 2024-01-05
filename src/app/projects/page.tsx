@@ -13,7 +13,7 @@ export default function Home() {
 
     return (
         <main className="mt-28 sm:mt-36 flex flex-col px-4" >
-            <ScrambledText text="Projects" speed={80} className="" />
+            <ScrambledText text="Projects" speed={80} className="mb-10" />
             <Projects />
         </main>
     )
