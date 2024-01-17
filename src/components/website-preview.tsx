@@ -25,7 +25,10 @@ export default function WebsitePreview({ link, Icon, text }: Props) {
     const iframe = document.createElement("iframe");
     iframe.src = link;
     iframe.classList.add(
-      "w-1/2",
+      "w-3/4",
+      "sm:w-7/10",
+      "md:w-3/5",
+      "lg:w-1/2",
       "h-1/2",
       "bg-white",
       "rounded-xl",
