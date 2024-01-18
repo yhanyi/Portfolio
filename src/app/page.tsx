@@ -40,28 +40,9 @@ export default function Home() {
 
       <Link href="/about" onClick={handleLinkClick}>
         <div className="absolute top-3/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-          <a className="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-primary dark:text-primaryDark transition duration-300 ease-out border-2 border-primary dark:border-primaryDark rounded-full shadow-md group bg-light dark:bg-dark">
-            <span className="absolute inset-0 flex items-center justify-center w-full h-full text-light dark:text-dark duration-300 -translate-x-full bg-primary dark:bg-primaryDark group-hover:translate-x-0 ease">
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M14 5l7 7m0 0l-7 7m7-7H3"
-                ></path>
-              </svg>
-            </span>
-            <span className="absolute flex items-center justify-center w-full h-full font-mono text-primary dark:text-primaryDark transition-all duration-300 transform group-hover:translate-x-full ease">
-              Enter
-            </span>
-            <span className="relative invisible">Enter</span>
-          </a>
+          <button className="font-mono px-10 border border-dark dark:border-light bg-light dark:bg-dark h-[50px] flex items-center justify-center rounded-xl cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow-md hover:scale-105 active:scale-100 hover:shadow-lg before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-primary before:to-primaryDark before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-xl hover:before:left-0 text-dark dark:text-light">
+            Enter
+          </button>
         </div>
       </Link>
     </main>

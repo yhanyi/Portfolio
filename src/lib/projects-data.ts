@@ -22,7 +22,7 @@ export const projectsData = [
       "Migrated my Javascript portfolio to Typescript, including context providers and hooks with greater focus on extendability and responsiveness, as well as simple ThreeJS concepts.",
     tags: ["NextJS", "Tailwind", "Typescript", "ThreeJS"],
     imageUrl: portfolio4,
-    demoLink: "https://yhanyi.vercel.app/",
+    demoLink: "https://yeohhanyi.vercel.app/",
     githubLink: "https://github.com/yhanyi/Portfolio",
   },
   {
@@ -49,8 +49,8 @@ export const projectsData = [
       "A single-page website with NextJS, built while learning Typescript and learning about context providers.",
     tags: ["Typescript", "React", "NextJS", "Tailwind"],
     imageUrl: portfolio3,
-    demoLink: "https://yhy-react-v2.vercel.app/",
-    githubLink: "https://github.com/yhanyi/react-portfolio-v2",
+    demoLink: "https://yeohhanyi2.vercel.app/",
+    githubLink: "https://github.com/yhanyi/PortfolioV3",
   },
   {
     title: "Javascript Portfolio",
