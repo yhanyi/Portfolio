@@ -52,7 +52,7 @@ export default function WebsitePreview({ link, Icon, text }: Props) {
     <React.Fragment>
       <div
         onClick={openPreview}
-        className="flex items-center justify-center group relative"
+        className="flex items-center justify-center group relative cursor-pointer"
       >
         <Icon className="w-5 h-5 hover:scale-110 hover:text-primary dark:hover:text-primaryDark transition-300" />
         <span className="absolute -top-10 left-[50%] -translate-x-[50%] z-20 origin-left scale-0 p-1 rounded-lg border border-gray-500  bg-white dark:bg-black text-black dark:text-white text-sm shadow-md transition-all duration-300 ease-in-out group-hover:scale-100">

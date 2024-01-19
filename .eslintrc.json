@@ -1,4 +1,3 @@
 {
-  // Test
   "extends": "next/core-web-vitals"
 }
