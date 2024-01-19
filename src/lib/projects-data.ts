@@ -13,8 +13,6 @@ export const projectsData = [
       "Disclaimer: NOT written by me. I'm maintaining a personal blog to learn the Astro framework. Template provided by Astro Cactus.",
     tags: ["Astro", "Tailwind", "Typescript"],
     imageUrl: astroblog1,
-    demoLink: null,
-    githubLink: null,
   },
   {
     title: "Personal Portfolio",
@@ -23,7 +21,6 @@ export const projectsData = [
     tags: ["NextJS", "Tailwind", "Typescript", "ThreeJS"],
     imageUrl: portfolio4,
     demoLink: "https://yeohhanyi.vercel.app/",
-    githubLink: "https://github.com/yhanyi/Portfolio",
   },
   {
     title: "Arknights Particles",
@@ -50,7 +47,6 @@ export const projectsData = [
     tags: ["Typescript", "React", "NextJS", "Tailwind"],
     imageUrl: portfolio3,
     demoLink: "https://yeohhanyi2.vercel.app/",
-    githubLink: "https://github.com/yhanyi/PortfolioV3",
   },
   {
     title: "Javascript Portfolio",
@@ -59,7 +55,6 @@ export const projectsData = [
     tags: ["Javascript", "React", "NextJS", "Tailwind"],
     imageUrl: portfolio2,
     demoLink: "https://yhy-react-test.vercel.app/",
-    githubLink: "https://github.com/yhanyi/PortfolioV2",
   },
   {
     title: "HTML & CSS Portfolio",
@@ -67,7 +62,5 @@ export const projectsData = [
       "My first website, built while learning basic HTML, CSS and Javascript.",
     tags: ["HTML", "CSS", "Javascript"],
     imageUrl: portfolio1,
-    demoLink: null,
-    githubLink: null,
   },
 ] as const;

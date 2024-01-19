@@ -1,8 +1,6 @@
 "use client";
 
-import React from "react";
-import { useRef } from "react";
-import { projectsData } from "@/lib/projects-data";
+import React, { useRef } from "react";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Link from "next/link";
@@ -38,7 +36,16 @@ const Popup = ({ link, Icon, text }: PopupProps) => {
   );
 };
 
-type ProjectProps = (typeof projectsData)[number];
+// type ProjectProps = (typeof projectsData)[number];
+
+type ProjectProps = {
+  title: string;
+  description: string;
+  tags: string[];
+  imageUrl: string;
+  demoLink: string | null;
+  githubLink: string | null;
+};
 
 export default function Project({
   title,
@@ -78,17 +85,21 @@ export default function Project({
             <div className="flex justify-between">
               <h3 className="text-lg font-semibold">{title}</h3>
 
-              {demoLink && githubLink ? (
-                <div className="flex gap-5">
+              <div className="flex gap-5">
+                {demoLink ? (
                   <WebsitePreview
                     link={demoLink}
                     text="Preview"
                     Icon={FiMaximize}
                   />
+                ) : null}
+                {demoLink ? (
                   <Popup link={demoLink} text="Demo" Icon={FiPlayCircle} />
+                ) : null}
+                {githubLink ? (
                   <Popup link={githubLink} text="Github" Icon={FiGithub} />
-                </div>
-              ) : null}
+                ) : null}
+              </div>
             </div>
 
             <p className="mt-2 text-sm leading-relaxed text-gray-700 dark:text-white/70">
