@@ -2,6 +2,7 @@
 
 import React, { useRef } from "react";
 import Image from "next/image";
+import { projectsData } from "@/lib/projects-data";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Link from "next/link";
 import { FiMaximize, FiPlayCircle, FiGithub } from "react-icons/fi";
@@ -36,16 +37,7 @@ const Popup = ({ link, Icon, text }: PopupProps) => {
   );
 };
 
-// type ProjectProps = (typeof projectsData)[number];
-
-type ProjectProps = {
-  title: string;
-  description: string;
-  tags: string[];
-  imageUrl: string;
-  demoLink: string | null;
-  githubLink: string | null;
-};
+type ProjectProps = (typeof projectsData)[number];
 
 export default function Project({
   title,
