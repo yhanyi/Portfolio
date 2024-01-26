@@ -6,6 +6,7 @@ import ScrambledText from "@/components/scrambled-text";
 import ThreeGradient from "@/components/three-gradient";
 import Link from "next/link";
 import React from "react";
+import { FiLogIn } from "react-icons/fi";
 
 export default function Home() {
   const { activeSection, setActiveSection, setTimeOfLastClick } =
@@ -40,8 +41,27 @@ export default function Home() {
 
       <Link href="/about" onClick={handleLinkClick}>
         <div className="absolute top-3/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-          <button className="font-mono px-10 border border-dark dark:border-light bg-light dark:bg-dark h-[50px] flex items-center justify-center rounded-xl cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow-md hover:scale-105 active:scale-100 hover:shadow-lg before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-primary before:to-primaryDark before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-xl hover:before:left-0 text-dark dark:text-light">
-            Enter
+          <button
+            className={`
+        relative z-0 flex items-center gap-2 overflow-hidden rounded-lg border-[2px] 
+        border-primary dark:border-primaryDark px-4 py-2 font-semibold
+        uppercase text-primary dark:text-primaryDark transition-all duration-500
+        bg-light dark:bg-dark
+        
+        before:absolute before:inset-0
+        before:-z-10 before:translate-x-[150%]
+        before:translate-y-[150%] before:scale-[2.5]
+        before:rounded-[100%] before:bg-primary dark:before:bg-primaryDark
+        before:transition-transform before:duration-1000
+        before:content-[""]
+
+        hover:scale-105 hover:text-neutral-900
+        hover:before:translate-x-[0%]
+        hover:before:translate-y-[0%]
+        active:scale-95`}
+          >
+            <FiLogIn />
+            <span>Enter</span>
           </button>
         </div>
       </Link>
