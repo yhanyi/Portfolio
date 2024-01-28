@@ -12,18 +12,21 @@ export default function CoursesAbout() {
       transition={{ delay: 0.175 }}
     >
       <p className="my-2 text-xs md:text-base sm:text-sm px-2 sm:px-10">
-        I like to try different courses for fun to learn more about the
-        workflows of different fields in tech. It also keeps me interested in
-        what I learn.
+        I like learning and exploring more about different fields in the realm
+        of technology! Doing these courses in my spare time adds a bit of fun to
+        my regular university coursework, and provides valuable insights into
+        the unique workflows of different tech domains.
       </p>
       <p className="my-2 text-xs md:text-base sm:text-sm px-2 sm:px-10">
         Here are some of the certificates from courses I have done in my free
-        time! Collecting them into place gives me a tangible visualization of
-        what I have learnt thus far.
+        time! Collating them gives me a tangible visual of what I have learnt
+        thus far, and reminds me to always continue the learning process.
       </p>
       <p className="my-2 text-xs md:text-base sm:text-sm px-2 sm:px-10">
-        Please note that these courses are mostly done for fun and are not
-        necessarily representative of my professional abilities.
+        Please note that these courses are pursued primarily for personal
+        enrichment. While they showcase my commitment to continuous learning,
+        they may not comprehensively reflect my professional abilities in these
+        fields.
       </p>
     </motion.div>
   );

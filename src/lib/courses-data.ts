@@ -1,3 +1,4 @@
+// DataCamp courses
 import advanceddeeplearningwithkeras from "/public/certificates/advanceddeeplearningwithkeras.png";
 import bayesianregressionmodelingwithrstanarm from "/public/certificates/bayesianregressionmodelingwithrstanarm.png";
 import cleaningdatainpython from "/public/certificates/cleaningdatainpython.png";
@@ -92,16 +93,16 @@ import workingwithdatesandtimesinpython from "/public/certificates/workingwithda
 import workingwithdatesandtimesinr from "/public/certificates/workingwithdatesandtimesinr.png";
 import writingfunctionsinpython from "/public/certificates/writingfunctionsinpython.png";
 
+// Other courses
+import aisg1 from "/public/certificates/aisg1.png";
+import aisg2 from "/public/certificates/aisg2.png";
 import crashcoursepython from "/public/certificates/crashcoursepython.png";
-import mls1 from "/public/certificates/mls1.png";
-import mls2 from "/public/certificates/mls2.png";
-import mls3 from "/public/certificates/mls3.png";
+import cs50ai from "/public/certificates/cs50ai.png";
 import dls1 from "/public/certificates/dls1.png";
 import dls2 from "/public/certificates/dls2.png";
 import dls3 from "/public/certificates/dls3.png";
 import dls4 from "/public/certificates/dls4.png";
 import dls5 from "/public/certificates/dls5.png";
-import mlsfinal from "/public/certificates/mlsfinal.png";
 import m4ml1 from "/public/certificates/m4ml1.png";
 import m4ml2 from "/public/certificates/m4ml2.png";
 import m4ml3 from "/public/certificates/m4ml3.png";
@@ -111,10 +112,25 @@ import mlops2 from "/public/certificates/mlops2.png";
 import mlops3 from "/public/certificates/mlops3.png";
 import mlops4 from "/public/certificates/mlops4.png";
 import mlopsfinal from "/public/certificates/mlopsfinal.png";
-import aisg1 from "/public/certificates/aisg1.png";
-import aisg2 from "/public/certificates/aisg2.png";
+import mls1 from "/public/certificates/mls1.png";
+import mls2 from "/public/certificates/mls2.png";
+import mls3 from "/public/certificates/mls3.png";
+import mlsfinal from "/public/certificates/mlsfinal.png";
 
 export const coursesData = [
+  {
+    track: "CS50",
+    certificates: [
+      {
+        title: "CS50AI",
+        image: cs50ai,
+        description: "January 2024",
+        author: "Harvard",
+        link: "https://certificates.cs50.io/a363642f-b089-4145-8eb3-2a78ddfa77a6.pdf?size=letter",
+      },
+    ],
+  },
+
   {
     track: "AI for Industry",
     certificates: [

@@ -37,7 +37,7 @@ const Post = ({ image, author, title, description, link }: PostProps) => {
       <span className="rounded-md border-[1px] border-neutral-500 px-1.5 py-1 text-xs uppercase text-neutral-500">
         {author}
       </span>
-      <p className="mt-1.5 text-lg font-medium">{title}</p>
+      <p className="mt-1.5 text-base md:text-lg font-medium">{title}</p>
       <p className="text-sm text-neutral-500">{description}</p>
     </Link>
   );
