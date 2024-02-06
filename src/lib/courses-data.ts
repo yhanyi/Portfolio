@@ -103,6 +103,9 @@ import dls2 from "/public/certificates/dls2.png";
 import dls3 from "/public/certificates/dls3.png";
 import dls4 from "/public/certificates/dls4.png";
 import dls5 from "/public/certificates/dls5.png";
+import hackerranksqladvanced from "/public/certificates/hackerranksqladvanced.png";
+import hackerranksqlbasic from "/public/certificates/hackerranksqlbasic.png";
+import hackerranksqlintermediate from "/public/certificates/hackerranksqlintermediate.png";
 import m4ml1 from "/public/certificates/m4ml1.png";
 import m4ml2 from "/public/certificates/m4ml2.png";
 import m4ml3 from "/public/certificates/m4ml3.png";
@@ -118,6 +121,33 @@ import mls3 from "/public/certificates/mls3.png";
 import mlsfinal from "/public/certificates/mlsfinal.png";
 
 export const coursesData = [
+  {
+    track: "HackerRank",
+    certificates: [
+      {
+        title: "SQL Advanced",
+        image: hackerranksqladvanced,
+        description: "February 2024",
+        author: "HackerRank",
+        link: "https://www.hackerrank.com/certificates/fbd4009856b1",
+      },
+      {
+        title: "SQL Intermediate",
+        image: hackerranksqlintermediate,
+        description: "February 2024",
+        author: "HackerRank",
+        link: "https://www.hackerrank.com/certificates/c58cedeb95ca",
+      },
+      {
+        title: "SQL Basic",
+        image: hackerranksqlbasic,
+        description: "February 2024",
+        author: "HackerRank",
+        link: "https://www.hackerrank.com/certificates/29c16dd4145a",
+      },
+    ],
+  },
+
   {
     track: "CS50",
     certificates: [
