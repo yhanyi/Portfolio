@@ -5,9 +5,8 @@ import LinksBar from "@/components/links-bar";
 import ScrambledText from "@/components/scrambled-text";
 import ThreeGradient from "@/components/three-gradient";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
 import { FiLogIn } from "react-icons/fi";
-import BubbleText from "@/components/bubble-text";
 
 export default function Home() {
   const { activeSection, setActiveSection, setTimeOfLastClick } =
@@ -30,10 +29,6 @@ export default function Home() {
               className="!text-xl !sm:text-2xl font-thin"
               textOptions="bg-gradient-to-r from-primary to-primaryDark bg-clip-text text-transparent"
             />
-            {/* <BubbleText
-              text="Yeoh Han Yi"
-              className="text-xl sm:text-2xl font-thin text-primary dark:text-primaryDark"
-            /> */}
           </span>
           <span className="absolute left-0 top-0 h-[2px] w-0 bg-primary dark:bg-primaryDark transition-all duration-100 group-hover:w-full" />
           <span className="absolute right-0 top-0 h-0 w-[2px] bg-primary dark:bg-primaryDark transition-all delay-100 duration-100 group-hover:h-full" />

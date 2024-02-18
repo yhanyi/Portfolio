@@ -7,7 +7,9 @@ import ScrambledText from "@/components/scrambled-text";
 export default function Home() {
   // FIXME: Temporary fix to load pages at the top.
   useEffect(() => {
-    window.scrollTo(0, 0);
+    const positionString = localStorage.getItem("positon")!;
+    const position = parseInt(positionString, 10);
+    setTimeout(() => window.scrollTo(0, position), 100);
   }, []);
 
   return (
