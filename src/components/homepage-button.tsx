@@ -11,7 +11,9 @@ export default function MagnetButton() {
   const handleMouseMove = (e: any) => {
     if (!ref.current) return;
 
-    const { height, width, left, top } = ref.current.getBoundingClientRect();
+    const { height, width, left, top } = (
+      !ref.current as any
+    ).getBoundingClientRect();
 
     setX(e.clientX - (left + width / 2));
     setY(e.clientY - (top + height / 2));
