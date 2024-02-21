@@ -119,7 +119,7 @@ export const skillsData = [
     imagedark: "/skills-images/threejs-dark.svg",
   },
   {
-    id: 1,
+    id: 18,
     name: "LATEX",
     level: "Comfortable",
     imagelight: "/skills-images/latex.svg",

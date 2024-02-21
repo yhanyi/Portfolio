@@ -151,7 +151,7 @@ export default function Skills() {
   return (
     <>
       <div
-        className="flex flex-col items-center justify-center gap-3 h-full relative"
+        className="flex flex-col items-center justify-center gap-3 h-full max-w-xl relative"
         style={{ transform: "scale(0.9)" }}
       >
         <div className="flex flex-row justify-around flex-wrap gap-20 items-center">

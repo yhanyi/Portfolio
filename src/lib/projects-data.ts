@@ -5,8 +5,30 @@ import cnndigits from "/public/project-images/cnn-digits.png";
 import akparticles from "/public/project-images/arknights-particles.png";
 import portfolio4 from "/public/project-images/portfolio-4.png";
 import astroblog1 from "/public/project-images/astroblog1.png";
+import senpaigpt from "/public/project-images/senpaigpt.png";
+import tradingbotnotebook from "/public/project-images/tradingbotnotebook.png";
 
 export const projectsData = [
+  {
+    title: "Pytorch Trading Bot",
+    description:
+      "Learnt the basics of how to use Pytorch models (like Finbert) to analyze news sentiments and use it to make simple paper trading predictions. The news data is provided by Alpaca.",
+    tags: ["Pytorch", "AlpacaAPI", "Python", "Finbert"],
+    imageUrl: tradingbotnotebook,
+    demoLink:
+      "https://colab.research.google.com/github/yhanyi/MLNotebooks/blob/main/TradingBotTutorial.ipynb",
+    githubLink:
+      "https://github.com/yhanyi/MLNotebooks/blob/main/TradingBotTutorial.ipynb",
+  },
+  {
+    title: "SenpaiGPT",
+    description:
+      "Quick online website made so I can reference GPT-4.0 instead of paying 20 USD a month for ChatGPT 4.0. Link not provided as anyone with a Google account can log in and use my API.",
+    tags: ["OpenAI", "GPT", "NextJS", "Firebase"],
+    imageUrl: senpaigpt,
+    demoLink: null,
+    githubLink: null,
+  },
   {
     title: "Astro Blog",
     description:

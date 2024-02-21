@@ -8,8 +8,10 @@ const config: Config = {
       colors: {
         light: "#fffcfc",
         dark: "#020713",
-        primary: "#99ccff",
+        primary: "#cffbfe",
         primaryDark: "#81e6d9",
+        blueOne: "#08f6d4",
+        blueTwo: "#0f6ce3",
         // primary: "#319795",
         // primaryDark: "#6666cc",
       },

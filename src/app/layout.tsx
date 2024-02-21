@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
@@ -8,7 +8,7 @@ import ActiveSectionContextProvider, {
   ActiveSectionContext,
 } from "@/components/active-section-context";
 
-const inter = Inter({ subsets: ["latin"] });
+const poppins = Poppins({ weight: ["400"], subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Yeoh Han Yi",
@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth">
       <body
-        className={`${inter.className} bg-light text-dark dark:bg-dark dark:text-light relative`}
+        className={`${poppins.className} bg-light text-dark dark:bg-dark dark:text-light relative`}
       >
         <ThemeContextProvider>
           <ActiveSectionContextProvider>
