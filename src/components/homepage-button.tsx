@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, RefObject } from "react";
 import { MdOutlineArrowUpward } from "react-icons/md";
 
 export default function MagnetButton() {
@@ -10,9 +10,8 @@ export default function MagnetButton() {
 
   const handleMouseMove = (e: any) => {
     if (!ref.current) return;
-
     const { height, width, left, top } = (
-      !ref.current as any
+      ref.current as any
     ).getBoundingClientRect();
 
     setX(e.clientX - (left + width / 2));
