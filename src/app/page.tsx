@@ -8,7 +8,6 @@ import Link from "next/link";
 import React, { useEffect } from "react";
 import MagnetButton from "@/components/homepage-button";
 import { motion } from "framer-motion";
-import BubbleText from "@/components/bubble-text";
 
 export default function Home() {
   const { activeSection, setActiveSection, setTimeOfLastClick } =
