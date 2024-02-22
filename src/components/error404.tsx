@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Error404() {
   return (
-    <div className="flex justify-center items-center">
+    <div className="flex justify-center items-center p-20">
       <div className="text-center">
         <h1 className="mb-4 text-6xl font-semibold text-primary dark:text-primaryDark">
           404
@@ -30,7 +30,7 @@ export default function Error404() {
         <p className="mt-4 mb-10 text-dark dark:text-white">
           Why not check out a few of my links? :D
         </p>
-        <div className="flex flex-col md:flex-row gap-10">
+        <div className="flex flex-col xl:flex-row gap-10">
           <PinContainer title="yeohhanyi.vercel.app">
             <Link href="https://yeohhanyi.vercel.app">
               <div className="flex basis-full flex-col p-4 tracking-tight text-dark dark:text-light sm:basis-1/2 w-[20rem] h-[20rem] ">
