@@ -3,9 +3,9 @@
 import About from "@/components/about-me";
 import EarthCanvas from "@/components/earth";
 import Experiences from "@/components/experiences";
-import ScrambledText from "@/components/scrambled-text";
 import Skills from "@/components/skills";
 import React, { useEffect } from "react";
+import { VanishText } from "@/components/vanishtext";
 
 export default function Home() {
   // FIXME: Temporary fix to load pages at the top.
@@ -16,14 +16,10 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="mt-28 sm:mt-36 flex flex-col px-4 md:px-16">
-      <div className="flex items-center justify-center">
-        <span className="border border-dark dark:border-light rounded-xl text-center p-2 font-bold text-2xl bg-gradient-to-r from-blueOne to-blueTwo bg-clip-text text-transparent">
-          About Me
-        </span>
-      </div>
+    <main className="mt-16 sm:mt-16 flex flex-col px-4 md:px-16">
+      <VanishText />
 
-      <div className="flex xl:flex-row flex-col overflow-hidden gap-10 justify-center items-center">
+      <div className="flex xl:flex-row flex-col overflow-hidden gap-10 justify-center items-center mt-20">
         <div className="xl:w-1/3 md:w-[550px] md:h-[550px] w-[350px] h-[350px]">
           <EarthCanvas />
         </div>
@@ -32,7 +28,7 @@ export default function Home() {
         </div>
       </div>
       <div className="flex items-center justify-center">
-        <span className="border border-dark dark:border-light rounded-xl text-center p-2 my-20 font-bold text-2xl bg-gradient-to-r from-blueOne to-blueTwo bg-clip-text text-transparent">
+        <span className="rounded-xl text-center p-2 my-20 font-bold text-2xl text-dark dark:text-light">
           Tools & Technologies
         </span>
       </div>
@@ -41,7 +37,7 @@ export default function Home() {
       </div>
 
       <div className="flex items-center justify-center">
-        <span className="border border-dark dark:border-light rounded-xl text-center p-2 my-20 font-bold text-2xl bg-gradient-to-r from-blueOne to-blueTwo bg-clip-text text-transparent">
+        <span className="rounded-xl text-center p-2 my-20 font-bold text-2xl text-dark dark:text-light">
           Education & Experiences
         </span>
       </div>

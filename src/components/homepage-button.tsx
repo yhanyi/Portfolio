@@ -30,7 +30,7 @@ export default function MagnetButton() {
       onMouseLeave={handleMouseLeave}
       animate={{ x, y }}
       transition={{ type: "spring", stiffness: 200, damping: 20 }}
-      className="group relative grid h-[50px] w-[50px] place-content-center rounded-full border border-dark dark:border-light transition-colors duration-700 ease-out"
+      className="group relative grid h-[50px] w-[50px] place-content-center rounded-full border border-dark dark:border-light transition-colors duration-700 ease-out bg-opacity-50 bg-light dark:bg-dark"
     >
       <MdOutlineArrowUpward className="relative z-10 rotate-45 text-3xl text-dark dark:text-light transition-all duration-700 ease-out group-hover:rotate-90" />
 
@@ -60,15 +60,6 @@ export default function MagnetButton() {
           d="M100,100 m-100,0 a100,100 0 1,0 200,0 a100,100 0 1,0 -200,0"
           fill="none"
         />
-        {/* <text>
-          <textPath
-            href="#circlePath"
-            fill="black"
-            className="fill-black text-xl font-light uppercase opacity-0 transition-opacity duration-700 ease-out group-hover:opacity-100"
-          >
-            Welcome to my website!
-          </textPath>
-        </text> */}
       </motion.svg>
     </motion.button>
   );

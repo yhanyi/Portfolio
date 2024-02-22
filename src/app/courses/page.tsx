@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <main className="mt-28 sm:mt-36 flex flex-col px-4">
       <div className="flex items-center justify-center">
-        <span className="border border-dark dark:border-light rounded-xl text-center p-2 mb-10 font-bold text-2xl bg-gradient-to-r from-blueOne to-blueTwo bg-clip-text text-transparent">
+        <span className="rounded-xl text-center p-2 mb-10 font-bold text-2xl text-dark dark:text-light">
           Courses
         </span>
       </div>

@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Open_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
@@ -7,8 +6,6 @@ import ThemeContextProvider from "@/components/theme-context";
 import ActiveSectionContextProvider, {
   ActiveSectionContext,
 } from "@/components/active-section-context";
-
-const opensans = Open_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Yeoh Han Yi",
@@ -23,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth">
       <body
-        className={`${opensans.className} bg-light text-dark dark:bg-dark dark:text-light relative`}
+        className={`font-sans bg-light text-dark dark:bg-dark dark:text-light relative`}
       >
         <ThemeContextProvider>
           <ActiveSectionContextProvider>
