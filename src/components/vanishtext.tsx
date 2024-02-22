@@ -18,8 +18,9 @@ export const VanishText = () => {
           phrases={[
             "Machine Learning",
             "Artificial Intelligence",
+            "Large Language Models",
             "Quant Development",
-            "Fullstack Development",
+            "Fullstack",
             "Software Engineering",
           ]}
         />
