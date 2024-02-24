@@ -9,7 +9,7 @@ import React, {
   useRef,
   useState,
 } from "react";
-import { useActiveSectionContext } from "./active-section-context";
+import { useActiveSectionContext } from "@/components/active-section-context";
 
 type OptionProps = {
   text: "Home" | "About" | "Projects" | "Courses";

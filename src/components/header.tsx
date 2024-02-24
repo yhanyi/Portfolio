@@ -5,10 +5,10 @@ import { motion } from "framer-motion";
 import { links } from "@/lib/links-data";
 import Link from "next/link";
 import clsx from "clsx";
-import { useActiveSectionContext } from "./active-section-context";
-import ThemeSwitch from "./theme-switch";
-import MenuDropdown from "./menu-dropdown";
-import NameDropdown from "./name-dropdown";
+import { useActiveSectionContext } from "@/components/active-section-context";
+import ThemeSwitch from "@/components/theme-switch";
+import MenuDropdown from "@/components/menu-dropdown";
+import NameDropdown from "@/components/name-dropdown";
 
 export default function Header() {
   const { activeSection, setActiveSection, setTimeOfLastClick } =

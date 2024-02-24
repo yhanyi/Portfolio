@@ -1,8 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { MdWavingHand } from "react-icons/md";
 
-export const VanishText = () => {
+export default function TypewriterText() {
   return (
     <div className="px-4 py-24 text-center md:py-36">
       <h3 className="text-3xl font-medium sm:text-4xl md:text-5xl lg:text-6xl my-20 gap-5 flex items-center justify-center">
@@ -26,7 +25,7 @@ export const VanishText = () => {
       </h3>
     </div>
   );
-};
+}
 
 const ONE_SECOND = 1000;
 const WAIT_TIME = ONE_SECOND * 2;

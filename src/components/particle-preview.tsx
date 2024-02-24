@@ -7,7 +7,7 @@ export default function ParticlePreview() {
     left: 0,
     width: "100%",
     height: "100%",
-    backgroundColor: "transparent", // Change to transparent background
+    backgroundColor: "transparent",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
@@ -16,9 +16,8 @@ export default function ParticlePreview() {
   const iframeStyle: CSSProperties = {
     width: "75%",
     height: "75%",
-    backgroundColor: "white",
+    backgroundColor: "transparent",
     borderRadius: "8px",
-    border: "1px solid #333",
   };
 
   return (

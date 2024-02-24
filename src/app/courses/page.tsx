@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useEffect } from "react";
-import ScrambledText from "@/components/scrambled-text";
 import CoursesAbout from "@/components/about-courses";
 import Certificates from "@/components/certificates";
 

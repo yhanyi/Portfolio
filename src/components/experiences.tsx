@@ -7,7 +7,7 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { experiencesData } from "@/lib/experiences-data";
-import { useTheme } from "./theme-context";
+import { useTheme } from "@/components/theme-context";
 
 export default function Experiences() {
   const { theme } = useTheme();

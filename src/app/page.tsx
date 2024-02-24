@@ -3,7 +3,7 @@
 import LinksBar from "@/components/links-bar";
 import ScrambledText from "@/components/scrambled-text";
 import ThreeGradient from "@/components/three-gradient";
-import React, { useEffect } from "react";
+import React from "react";
 import MagnetButton from "@/components/homepage-button";
 import { motion } from "framer-motion";
 

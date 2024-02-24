@@ -1,12 +1,11 @@
 "use client";
 
 import About from "@/components/about-me";
-import EarthCanvas from "@/components/earth";
 import Experiences from "@/components/experiences";
 import Skills from "@/components/skills";
 import React, { useEffect } from "react";
-import { VanishText } from "@/components/vanishtext";
-import ParticlePreview from "@/components/temp-particles";
+import TypewriterText from "@/components/typewriter-text";
+import ParticlePreview from "@/components/particle-preview";
 
 export default function Home() {
   // FIXME: Temporary fix to load pages at the top.
@@ -18,7 +17,7 @@ export default function Home() {
 
   return (
     <main className="mt-16 sm:mt-16 flex flex-col px-4 md:px-16">
-      <VanishText />
+      <TypewriterText />
       <div className="flex xl:flex-row flex-col overflow-hidden gap-10 justify-center items-center mt-20">
         <div className="md:w-[550px] md:h-[550px] w-[350px] h-[350px]">
           <ParticlePreview />
