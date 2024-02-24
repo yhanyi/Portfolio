@@ -6,6 +6,7 @@ import Experiences from "@/components/experiences";
 import Skills from "@/components/skills";
 import React, { useEffect } from "react";
 import { VanishText } from "@/components/vanishtext";
+import ThreeGradient from "@/components/three-gradient";
 
 export default function Home() {
   // FIXME: Temporary fix to load pages at the top.
@@ -18,7 +19,6 @@ export default function Home() {
   return (
     <main className="mt-16 sm:mt-16 flex flex-col px-4 md:px-16">
       <VanishText />
-
       <div className="flex xl:flex-row flex-col overflow-hidden gap-10 justify-center items-center mt-20">
         <div className="xl:w-1/3 md:w-[550px] md:h-[550px] w-[350px] h-[350px]">
           <EarthCanvas />

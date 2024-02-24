@@ -6,11 +6,10 @@ export const VanishText = () => {
   return (
     <div className="px-4 py-24 text-center md:py-36">
       <h3 className="text-3xl font-medium sm:text-4xl md:text-5xl lg:text-6xl my-20 gap-5 flex items-center justify-center">
-        Hello, I&apos;m Han Yi{" "}
-        <MdWavingHand className="hover:rotate-12 duration-200" />
+        Hello, I&apos;m Han Yi!
       </h3>
       <h3 className="text-xl font-medium sm:text-2xl md:text-3xl lg:text-4xl my-20">
-        I&apos;m a computer science and statistics double major at NUS
+        Computer Science & Statistics @ NUS
       </h3>
       <h3 className="text-xl font-medium  sm:text-2xl md:text-3xl lg:text-4xl">
         I&apos;m interested in

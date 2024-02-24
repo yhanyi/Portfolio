@@ -90,10 +90,10 @@ export default function NameDropdown() {
     <div className="flex items-center justify-center" ref={menuRef}>
       <motion.div animate={open ? "open" : "closed"} className="relative">
         <button
-          className="z-10 gap-2 p-1 flex justify-center rounded-xl items-center duration-200 w-[8rem] h-[3rem] bg-opacity-80 backgroup-blur-[0.5rem] border-opacity-40 shadow bg-white text-black dark:bg-black dark:text-white hover:scale-105 active:scale-100"
+          className="z-10 gap-5 p-1 flex justify-center rounded-xl items-center duration-200 w-[8rem] h-[3rem] bg-opacity-80 backgroup-blur-[0.5rem] border-opacity-40 shadow bg-white text-black dark:bg-black dark:text-white hover:scale-105 active:scale-100"
           onClick={() => setOpen((pv) => !pv)}
         >
-          <span className="font-medium text-sm">Yeoh Han Yi</span>
+          <span className="font-bold text-xl">YHY</span>
           <motion.span variants={iconVariants}>
             <FiChevronDown />
           </motion.span>
