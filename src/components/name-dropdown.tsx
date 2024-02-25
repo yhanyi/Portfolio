@@ -121,7 +121,7 @@ export default function NameDropdown() {
             setOpen={setOpen}
             text="Resume"
             Icon={FiDownload}
-            link="/public/yeohhanyi_resume.pdf"
+            link="/yeohhanyi_resume.pdf"
           />
         </motion.ul>
       </motion.div>

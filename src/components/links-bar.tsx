@@ -42,7 +42,7 @@ export default function LinksBar() {
           </Link>
 
           <Link
-            href="/public/yeohhanyi_resume.pdf"
+            href="/yeohhanyi_resume.pdf"
             download={true}
             target={"_blank"}
             className="group relative p-2 rounded-md hover:bg-primary dark:hover:bg-primaryDark hover:text-black transition-colors cursor-pointer"
