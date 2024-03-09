@@ -1,6 +1,6 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { Fa500Px, FaLaptopCode, FaReact } from "react-icons/fa";
+import { FaLaptopCode } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 
 export const experiencesData = [
@@ -12,11 +12,11 @@ export const experiencesData = [
     description: [
       "Semester GPA: - | Cumulative GPA: -",
       "Relevant Modules:",
-      "- CS2040S - Data Structures and Algorithms [Taking]",
-      "- CS2100 - Computer Organisation [Taking]",
-      "- ST2334 - Probability and Statistics [Taking]",
+      "- CS2040S - Data Structures and Algorithms",
+      "- CS2100 - Computer Organisation",
+      "- ST2334 - Probability and Statistics",
       "Activities and Societies:",
-      "- NUS.AI Interest Group",
+      "- NUS.AI",
       "- RC4 OrcaCode",
       "- RC4 Basketball",
       "Competitions and Events:",
@@ -31,11 +31,11 @@ export const experiencesData = [
     description: [
       "Semester GPA: 4.625 | Cumulative GPA: 4.6",
       "Relevant Modules:",
-      "- CS1010X - Programming Methodology I [A-]",
-      "- CS1231S - Discrete Structures [A-]",
-      "- CS2030S - Programming Methodology II [A-]",
-      "- MA1521 - Calculus For Computing [A]",
-      "- MA1522 - Linear Algebra For Computing [B+]",
+      "- CS1010X - Programming Methodology I",
+      "- CS1231S - Discrete Structures",
+      "- CS2030S - Programming Methodology II",
+      "- MA1521 - Calculus For Computing",
+      "- MA1522 - Linear Algebra For Computing",
     ],
   },
 

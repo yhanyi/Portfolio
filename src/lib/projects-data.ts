@@ -23,7 +23,7 @@ export const projectsData = [
   {
     title: "SenpaiGPT",
     description:
-      "Quick online website made so I can reference GPT-4.0 instead of paying 20 USD a month for ChatGPT 4.0. Link not provided as anyone with a Google account can log in and use my API.",
+      "Quick ChatGPT clone made so I can use GPT-4.0's API without using paying 20 USD a month. Chats are stored in Firebase. Link redacted since anyone with a Google account can login and use my API :/",
     tags: ["OpenAI", "GPT", "NextJS", "Firebase"],
     imageUrl: senpaigpt,
     demoLink: null,
@@ -32,7 +32,7 @@ export const projectsData = [
   {
     title: "Astro Blog",
     description:
-      "Disclaimer: NOT written by me. I'm maintaining a personal blog to learn the Astro framework. Template provided by Astro Cactus.",
+      "Maintaining a personal blog to explore the Astro framework. Template provided by Astro Cactus.",
     tags: ["Astro", "Tailwind", "Typescript"],
     imageUrl: astroblog1,
     demoLink: null,

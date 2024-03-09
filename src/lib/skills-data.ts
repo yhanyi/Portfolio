@@ -2,7 +2,7 @@ export const skillsData = [
   {
     id: 1,
     name: "Python",
-    level: "Proficient",
+    level: "Comfortable",
     imagelight: "/skills-images/python.svg",
     imagedark: "/skills-images/python.svg",
   },
