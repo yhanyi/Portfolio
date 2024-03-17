@@ -2,8 +2,18 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaLaptopCode } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
+import { TbDeviceComputerCamera } from "react-icons/tb";
 
 export const experiencesData = [
+  {
+    title: "Year 1 Summer Internship",
+    location: "Kabam Robotics",
+    icon: React.createElement(TbDeviceComputerCamera),
+    date: "May 2024 - August 2024",
+    description: [
+      "Incoming Software Intern (Video Analytics) @ Kabam Robotics",
+    ],
+  },
   {
     title: "Year 1 Semester 2",
     location: "National University of Singapore",
@@ -12,15 +22,15 @@ export const experiencesData = [
     description: [
       "Semester GPA: - | Cumulative GPA: -",
       "Relevant Modules:",
-      "- CS2040S - Data Structures and Algorithms",
-      "- CS2100 - Computer Organisation",
-      "- ST2334 - Probability and Statistics",
+      "• CS2040S - Data Structures and Algorithms",
+      "• CS2100 - Computer Organisation",
+      "• ST2334 - Probability and Statistics",
       "Activities and Societies:",
-      "- NUS.AI",
-      "- RC4 OrcaCode",
-      "- RC4 Basketball",
+      "• NUS.AI (Vice-President)",
+      "• RC4 OrcaCode",
+      "• RC4 Basketball",
       "Competitions and Events:",
-      "- Health Hack 2024",
+      "• Health Hack 2024",
     ],
   },
   {
@@ -31,11 +41,11 @@ export const experiencesData = [
     description: [
       "Semester GPA: 4.625 | Cumulative GPA: 4.6",
       "Relevant Modules:",
-      "- CS1010X - Programming Methodology I",
-      "- CS1231S - Discrete Structures",
-      "- CS2030S - Programming Methodology II",
-      "- MA1521 - Calculus For Computing",
-      "- MA1522 - Linear Algebra For Computing",
+      "• CS1010X - Programming Methodology I",
+      "• CS1231S - Discrete Structures",
+      "• CS2030S - Programming Methodology II",
+      "• MA1521 - Calculus For Computing",
+      "• MA1522 - Linear Algebra For Computing",
     ],
   },
 

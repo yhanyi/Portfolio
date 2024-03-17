@@ -22,7 +22,7 @@ export default function Header() {
       )}
     >
       <NameDropdown />
-      <nav className="hidden md:flex justify-center items-center py-0 border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] h-[3.25rem] sm:w-[28rem] w-[20rem] rounded-full dark:bg-black dark:border-black/40 dark:bg-opacity/75">
+      <nav className="hidden md:flex justify-center items-center py-0 border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] h-[3.25rem] sm:w-[40rem] w-[20rem] rounded-full dark:bg-black dark:border-black/40 dark:bg-opacity/75">
         <ul className="flex w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 dark:text-gray-400 sm:w-[initial] gap-5">
           {links.map((link) => (
             <li
@@ -36,7 +36,7 @@ export default function Header() {
                   setTimeOfLastClick(Date.now());
                 }}
                 className={clsx(
-                  "flex w-full items-center justify-center px-3 py-3 hover:text-black transition dark:hover:text-white",
+                  "flex w-full items-center justify-center px-2 py-3 hover:text-black transition dark:hover:text-white",
                   { "text-black dark:text-white": activeSection === link.name }
                 )}
               >

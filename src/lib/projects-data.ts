@@ -4,7 +4,6 @@ import portfolio3 from "/public/project-images/portfolio-3.png";
 import cnndigits from "/public/project-images/cnn-digits.png";
 import akparticles from "/public/project-images/arknights-particles.png";
 import portfolio4 from "/public/project-images/portfolio-4.png";
-import astroblog1 from "/public/project-images/astroblog1.png";
 import senpaigpt from "/public/project-images/senpaigpt.png";
 import tradingbotnotebook from "/public/project-images/tradingbotnotebook.png";
 
@@ -13,7 +12,7 @@ export const projectsData = [
     title: "Pytorch Trading Bot",
     description:
       "Learnt the basics of how to use Pytorch models (like Finbert) to analyze news sentiments and use it to make simple paper trading predictions. The news data is provided by Alpaca.",
-    tags: ["Pytorch", "AlpacaAPI", "Python", "Finbert"],
+    tags: ["Pytorch", "Alpaca", "Python", "Finbert"],
     imageUrl: tradingbotnotebook,
     demoLink:
       "https://colab.research.google.com/github/yhanyi/MLNotebooks/blob/main/TradingBotTutorial.ipynb",
@@ -26,15 +25,6 @@ export const projectsData = [
       "Quick ChatGPT clone made so I can use GPT-4.0's API without using paying 20 USD a month. Chats are stored in Firebase. Link redacted since anyone with a Google account can login and use my API :/",
     tags: ["OpenAI", "GPT", "NextJS", "Firebase"],
     imageUrl: senpaigpt,
-    demoLink: null,
-    githubLink: null,
-  },
-  {
-    title: "Astro Blog",
-    description:
-      "Maintaining a personal blog to explore the Astro framework. Template provided by Astro Cactus.",
-    tags: ["Astro", "Tailwind", "Typescript"],
-    imageUrl: astroblog1,
     demoLink: null,
     githubLink: null,
   },
