@@ -102,7 +102,19 @@ const InitialText = () => {
   );
 };
 
-const PreviousQuestions = ({ questions }) => {
+type QuestionType = {
+  key: string;
+  text: string;
+  postfix: string;
+  complete: boolean;
+  value: string;
+};
+
+type QuestionProps = {
+  questions: QuestionType[];
+};
+
+function PreviousQuestions({ questions }: QuestionProps) {
   return (
     <>
       {questions.map((q, i) => {
@@ -126,9 +138,13 @@ const PreviousQuestions = ({ questions }) => {
       })}
     </>
   );
+}
+
+type CurrProps = {
+  curQuestion: any;
 };
 
-const CurrentQuestion = ({ curQuestion }) => {
+function CurrentQuestion({ curQuestion }: CurrProps) {
   if (!curQuestion) return <></>;
 
   return (
@@ -139,13 +155,20 @@ const CurrentQuestion = ({ curQuestion }) => {
       )}
     </p>
   );
+}
+
+type SummaryProps = {
+  questions: any;
+  setQuestions: any;
 };
 
-const Summary = ({ questions, setQuestions }) => {
+const Summary = ({ questions, setQuestions }: SummaryProps) => {
   const [complete, setComplete] = useState(false);
 
   const handleReset = () => {
-    setQuestions((pv) => pv.map((q) => ({ ...q, value: "", complete: false })));
+    setQuestions((pv: QuestionType[]) =>
+      pv.map((q) => ({ ...q, value: "", complete: false }))
+    );
   };
 
   async function handleSend() {
@@ -164,8 +187,8 @@ const Summary = ({ questions, setQuestions }) => {
 
   return (
     <>
-      <p>Beautiful! Here&apos;s what we&apos;ve got:</p>
-      {questions.map((q) => {
+      <p>Perfect! Here&apos;s what we&apos;ve got:</p>
+      {questions.map((q: QuestionType) => {
         return (
           <p key={q.key}>
             <span className="text-blue-300">{q.key}:</span> {q.value}
@@ -198,6 +221,17 @@ const Summary = ({ questions, setQuestions }) => {
   );
 };
 
+type CurLineProps = {
+  text: any;
+  focused: any;
+  setText: any;
+  setFocused: any;
+  inputRef: any;
+  command: any;
+  handleSubmitLine: any;
+  containerRef: any;
+};
+
 const CurLine = ({
   text,
   focused,
@@ -207,14 +241,14 @@ const CurLine = ({
   command,
   handleSubmitLine,
   containerRef,
-}) => {
+}: CurLineProps) => {
   const scrollToBottom = () => {
     if (containerRef.current) {
       containerRef.current.scrollTop = containerRef.current.scrollHeight;
     }
   };
 
-  const onSubmit = (e) => {
+  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     handleSubmitLine(text);
     setText("");
@@ -223,14 +257,14 @@ const CurLine = ({
     }, 0);
   };
 
-  const onChange = (e) => {
+  const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setText(e.target.value);
     scrollToBottom();
   };
 
   useEffect(() => {
     return () => setFocused(false);
-  }, []);
+  }, [setFocused]);
 
   return (
     <>
@@ -285,7 +319,7 @@ const QUESTIONS = [
   },
   {
     key: "description",
-    text: "Perfect! So, ",
+    text: "Awesome! So, ",
     postfix: "what do you want to talk about?",
     complete: false,
     value: "",
