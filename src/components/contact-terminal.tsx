@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
 import { FiCheckCircle } from "react-icons/fi";
-import { Fragment, useEffect, useRef, useState } from "react";
+import { Fragment, MutableRefObject, useEffect, useRef, useState } from "react";
 import React from "react";
 import { sendEmail } from "@/lib/send-email";
 import toast from "react-hot-toast";
 
 export default function ContactTerminal() {
-  const containerRef = useRef(null);
-  const inputRef = useRef(null);
+  const containerRef = useRef<HTMLInputElement | null>(null);
+  const inputRef = useRef<HTMLInputElement | null>(null);
 
   return (
     <section className="px-4 py-12">
@@ -38,7 +38,12 @@ const TerminalHeader = () => {
   );
 };
 
-const TerminalBody = ({ containerRef, inputRef }) => {
+type TerminalProps = {
+  containerRef: MutableRefObject<HTMLInputElement | null>;
+  inputRef: MutableRefObject<HTMLInputElement | null>;
+};
+
+function TerminalBody({ containerRef, inputRef }: TerminalProps) {
   const [focused, setFocused] = useState(false);
   const [text, setText] = useState("");
 
@@ -84,7 +89,7 @@ const TerminalBody = ({ containerRef, inputRef }) => {
       )}
     </div>
   );
-};
+}
 
 const InitialText = () => {
   return (
