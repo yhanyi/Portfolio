@@ -148,7 +148,6 @@ const Summary = ({ questions, setQuestions }) => {
       return { ...acc, [val.key]: val.value };
     }, {});
 
-    console.log(formData);
     const { data, error } = await sendEmail(formData);
     if (error) {
       toast.error(error);
@@ -274,7 +273,7 @@ const QUESTIONS = [
   },
   {
     key: "name",
-    text: "Awesome! And what's ",
+    text: "Nice! What's ",
     postfix: "your name?",
     complete: false,
     value: "",

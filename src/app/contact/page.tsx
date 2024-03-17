@@ -17,7 +17,10 @@ export default function Home() {
         <span className="rounded-xl text-center p-2 mb-10 font-bold text-2xl text-dark dark:text-light">
           Get In Touch!
         </span>
-        <span>Contact page still WIP</span>
+        <span>
+          Send me a message through the contact terminal and I&apos;ll get back
+          to you!
+        </span>
         <div className="w-full">
           <ContactTerminal />
         </div>
