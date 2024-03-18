@@ -69,7 +69,7 @@ function TerminalBody({ containerRef, inputRef }: TerminalProps) {
   };
 
   return (
-    <div className="p-2 text-slate-100 text-lg">
+    <div className="p-2 text-slate-100 text-sm sm:text-base">
       <InitialText />
       <PreviousQuestions questions={questions} />
       <CurrentQuestion curQuestion={curQuestion} />
@@ -187,7 +187,7 @@ const Summary = ({ questions, setQuestions }: SummaryProps) => {
 
   return (
     <>
-      <p>Perfect! Here&apos;s what we&apos;ve got:</p>
+      <p>Perfect! Here&apos;s what I&apos;ve got from you:</p>
       {questions.map((q: QuestionType) => {
         return (
           <p key={q.key}>
@@ -205,13 +205,13 @@ const Summary = ({ questions, setQuestions }: SummaryProps) => {
         <div className="flex gap-2 mt-2">
           <button
             onClick={handleReset}
-            className="px-3 py-1 text-base hover:opacity-90 transition-opacity rounded bg-slate-100 text-black"
+            className="px-3 py-1 text-sm sm:text-base hover:opacity-90 transition-opacity rounded bg-slate-100 text-black"
           >
             Restart
           </button>
           <button
             onClick={handleSend}
-            className="px-3 py-1 text-base hover:opacity-90 transition-opacity rounded bg-indigo-500 text-white"
+            className="px-3 py-1 text-sm sm:text-base hover:opacity-90 transition-opacity rounded bg-indigo-500 text-white"
           >
             Send it!
           </button>
