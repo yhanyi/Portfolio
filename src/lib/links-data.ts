@@ -12,8 +12,8 @@ export const links = [
     hash: "/projects",
   },
   {
-    name: "Courses",
-    hash: "/courses",
+    name: "Certs",
+    hash: "/certs",
   },
   {
     name: "Contact",

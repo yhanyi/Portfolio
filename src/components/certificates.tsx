@@ -1,5 +1,5 @@
 import React from "react";
-import { coursesData } from "@/lib/courses-data";
+import { coursesData } from "@/lib/certs-data";
 import TrackCarousel from "@/components/carousel";
 
 type CourseDataProps = (typeof coursesData)[number];

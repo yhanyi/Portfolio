@@ -12,8 +12,8 @@ import React, {
 import { useActiveSectionContext } from "@/components/active-section-context";
 
 type OptionProps = {
-  text: "Home" | "About" | "Projects" | "Courses" | "Contact";
-  href: "/" | "/about" | "/projects" | "/courses" | "/contact";
+  text: "Home" | "About" | "Projects" | "Certs" | "Contact";
+  href: "/" | "/about" | "/projects" | "/certs" | "/contact";
   setOpen: Dispatch<SetStateAction<boolean>>;
 };
 
@@ -95,7 +95,7 @@ export default function MenuDropdown() {
           <Option setOpen={setOpen} text="Home" href="/" />
           <Option setOpen={setOpen} text="About" href="/about" />
           <Option setOpen={setOpen} text="Projects" href="/projects" />
-          <Option setOpen={setOpen} text="Courses" href="/courses" />
+          <Option setOpen={setOpen} text="Certs" href="/certs" />
           <Option setOpen={setOpen} text="Contact" href="/contact" />
         </motion.ul>
       </motion.div>
