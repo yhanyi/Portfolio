@@ -1,4 +1,4 @@
-// DataCamp courses
+// DataCamp certs
 import advanceddeeplearningwithkeras from "/public/certificates/advanceddeeplearningwithkeras.png";
 import bayesianregressionmodelingwithrstanarm from "/public/certificates/bayesianregressionmodelingwithrstanarm.png";
 import cleaningdatainpython from "/public/certificates/cleaningdatainpython.png";
@@ -93,7 +93,7 @@ import workingwithdatesandtimesinpython from "/public/certificates/workingwithda
 import workingwithdatesandtimesinr from "/public/certificates/workingwithdatesandtimesinr.png";
 import writingfunctionsinpython from "/public/certificates/writingfunctionsinpython.png";
 
-// Other courses
+// Other certs
 import aisg1 from "/public/certificates/aisg1.png";
 import aisg2 from "/public/certificates/aisg2.png";
 import crashcoursepython from "/public/certificates/crashcoursepython.png";
@@ -119,8 +119,37 @@ import mls1 from "/public/certificates/mls1.png";
 import mls2 from "/public/certificates/mls2.png";
 import mls3 from "/public/certificates/mls3.png";
 import mlsfinal from "/public/certificates/mlsfinal.png";
+import wqbronze from "/public/certificates/worldquantbronze.png";
+import wqsilver from "/public/certificates/worldquantsilver.png";
+import wqgold from "/public/certificates/worldquantgold.png";
 
 export const coursesData = [
+  {
+    track: "WorldQuant Challenge",
+    certificates: [
+      {
+        title: "WorldQuant Gold",
+        image: wqgold,
+        description: "April 2024",
+        author: "WorldQuant",
+        link: "",
+      },
+      {
+        title: "WorldQuant Silver",
+        image: wqsilver,
+        description: "April 2024",
+        author: "WorldQuant",
+        link: "",
+      },
+      {
+        title: "WorldQuant Bronze",
+        image: wqbronze,
+        description: "April 2024",
+        author: "WorldQuant",
+        link: "",
+      },
+    ],
+  },
   {
     track: "HackerRank",
     certificates: [
