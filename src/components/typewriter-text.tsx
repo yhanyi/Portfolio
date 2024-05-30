@@ -16,10 +16,9 @@ export default function TypewriterText() {
           phrases={[
             "Machine Learning",
             "Artificial Intelligence",
-            "Large Language Models",
-            "Quant Development",
-            "Fullstack",
+            "Quantitative Development",
             "Software Engineering",
+            "Algorithm Theory",
           ]}
         />
       </h3>

@@ -6,17 +6,15 @@ import { TbDeviceComputerCamera } from "react-icons/tb";
 
 export const experiencesData = [
   {
-    title: "Year 1 Summer Internship",
-    location: "Kabam Robotics",
+    title: "Software Engineering Intern",
+    location: " @ Kabam Robotics",
     icon: React.createElement(TbDeviceComputerCamera),
     date: "May 2024 - August 2024",
-    description: [
-      "Incoming Software Intern (Video Analytics) @ Kabam Robotics",
-    ],
+    description: ["Video Analytics Department"],
   },
   {
     title: "Year 1 Semester 2",
-    location: "National University of Singapore",
+    location: "@ National University of Singapore",
     icon: React.createElement(FaLaptopCode),
     date: "January 2024 - May 2024",
     description: [
@@ -35,7 +33,7 @@ export const experiencesData = [
   },
   {
     title: "Year 1 Semester 1",
-    location: "National University of Singapore",
+    location: "@ National University of Singapore",
     icon: React.createElement(CgWorkAlt),
     date: "August 2023 - December 2023",
     description: [
