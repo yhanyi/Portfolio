@@ -16,21 +16,26 @@ export default function About() {
           About Me
         </span>
       </div>
-      <p className="my-4 text-xs md:text-base sm:text-sm">
-        I&apos;m currently exploring various fields, heavily inclining towards
-        machine learning and quant development. Full-stack development and
-        software engineering are in the cards as well.
-      </p>
-      <p className="my-4 text-xs md:text-base sm:text-sm">
-        I&apos;ve always been fascinated by bleeding-edge technology, and my
-        studies in computer science allows me to participate in innovating the
-        next groundbreaking technology.
-      </p>
-      <p className="my-4 text-xs md:text-base sm:text-sm">
-        I started my coding journey much later than many of my peers, but my
-        strong willingness to learn and improve my skills allows me to remain
-        competitive.
-      </p>
+      <div className="">
+        <p className="my-4 text-xs md:text-base sm:text-sm">
+          I&apos;m currently exploring various fields, heavily inclining towards
+          machine learning / artificial intelligence and quantitative
+          development.
+        </p>
+        <p className="my-4 text-xs md:text-base sm:text-sm">
+          I&apos;ve always been fascinated by cutting-edge technology, and my
+          studies in computer science allows me to participate in innovating the
+          next groundbreaking technology.
+        </p>
+        <p className="my-4 text-xs md:text-base sm:text-sm">
+          I started my coding journey much later than many of my peers, but my
+          strong willingness to learn and improve my skills allows me to remain
+          competitive.
+        </p>
+        <p className="my-4 text-xs text-gray-500">
+          (Website updated 30 May 2024)
+        </p>
+      </div>
     </motion.div>
   );
 }
