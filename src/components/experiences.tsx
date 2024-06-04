@@ -28,7 +28,7 @@ export default function Experiences() {
                 boxShadow: "none",
                 border: "1px solid rgba(0, 0, 0, 0.05)",
                 textAlign: "left",
-                padding: "1.3rem 2rem",
+                padding: "1.5rem 2rem",
               }}
               contentArrowStyle={{
                 borderRight:
@@ -46,13 +46,29 @@ export default function Experiences() {
             >
               <h3 className="font-semibold capitalize">{item.title}</h3>
               <p className="font-normal !mt-0">{item.location}</p>
-              {item.description.map((info, id) => (
-                <React.Fragment key={id}>
-                  <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
-                    {info}
-                  </p>
-                </React.Fragment>
-              ))}
+
+              <div className="mt-2 sm:mt-5">
+                {item.description.map((info, id) => (
+                  <React.Fragment key={id}>
+                    <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
+                      {info}
+                    </p>
+                  </React.Fragment>
+                ))}
+              </div>
+
+              {item.tags ? (
+                <ul className="flex flex-wrap gap-2 my-2 sm:my-5">
+                  {item.tags.map((tag, index) => (
+                    <li
+                      className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
+                      key={index}
+                    >
+                      {tag}
+                    </li>
+                  ))}
+                </ul>
+              ) : null}
             </VerticalTimelineElement>
           </React.Fragment>
         ))}

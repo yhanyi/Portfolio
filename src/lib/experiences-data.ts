@@ -6,11 +6,16 @@ import { TbDeviceComputerCamera } from "react-icons/tb";
 
 export const experiencesData = [
   {
-    title: "Software Engineering Intern",
+    title: "Software Engineering Intern [ONGOING]",
     location: " @ Kabam Robotics",
     icon: React.createElement(TbDeviceComputerCamera),
     date: "May 2024 - August 2024",
-    description: ["Video Analytics Department"],
+    description: [
+      "Video Analytics Department",
+      "• Implementing object-based alert throttling",
+      "• ???",
+    ],
+    tags: ["Python", "C++", "OpenCV", "ROS", "AWS KVS", "AWS KDS"],
   },
   {
     title: "Year 1 Semester 2",
@@ -18,7 +23,7 @@ export const experiencesData = [
     icon: React.createElement(FaLaptopCode),
     date: "January 2024 - May 2024",
     description: [
-      "Semester GPA: - | Cumulative GPA: -",
+      "Semester GPA: 4.5 | Cumulative GPA: 4.55",
       "Relevant Modules:",
       "• CS2040S - Data Structures and Algorithms",
       "• CS2100 - Computer Organisation",
@@ -30,6 +35,7 @@ export const experiencesData = [
       "Competitions and Events:",
       "• Health Hack 2024",
     ],
+    tags: null,
   },
   {
     title: "Year 1 Semester 1",
@@ -45,6 +51,7 @@ export const experiencesData = [
       "• MA1521 - Calculus For Computing",
       "• MA1522 - Linear Algebra For Computing",
     ],
+    tags: null,
   },
 
   {
@@ -56,5 +63,6 @@ export const experiencesData = [
       "Grade: 88.75/90 Rank Points",
       "Studied H3 Physics, H2 Physics, H2 Chemistry, H2 Mathematics, H2 Economics",
     ],
+    tags: null,
   },
 ] as const;
