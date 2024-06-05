@@ -1,12 +1,13 @@
 "use client";
 
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { projectsData } from "@/lib/projects-data";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Link from "next/link";
 import { FiMaximize, FiPlayCircle, FiGithub } from "react-icons/fi";
 import WebsitePreview from "@/components/website-preview";
+import SkillHover from "./skill-hover";
 
 type PopupProps = {
   link: string;
@@ -42,10 +43,10 @@ type ProjectProps = (typeof projectsData)[number];
 export default function Project({
   title,
   description,
-  tags,
   imageUrl,
   demoLink,
   githubLink,
+  tags,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -54,6 +55,22 @@ export default function Project({
   });
   const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
+  const [dimension, setDimension] = useState(50);
+  const updateDimension = () => {
+    if (typeof window !== "undefined") {
+      setDimension(window.innerWidth >= 768 ? 25 : 20);
+    }
+  };
+  useEffect(() => {
+    updateDimension();
+    const handleResize = () => {
+      updateDimension();
+    };
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.addEventListener("resize", handleResize);
+    };
+  }, [dimension]);
 
   return (
     <motion.div
@@ -97,13 +114,17 @@ export default function Project({
             <p className="mt-2 text-sm leading-relaxed text-gray-700 dark:text-white/70">
               {description}
             </p>
-            <ul className="flex flex-wrap mt-2 gap-2 sm:mt-auto">
-              {tags.map((tag, index) => (
-                <li
-                  className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
-                  key={index}
-                >
-                  {tag}
+
+            <ul className="flex flex-wrap gap-5 my-2 sm:my-5 ">
+              {tags.map((tag, id) => (
+                <li key={id}>
+                  <SkillHover
+                    srclight={tag.srclight}
+                    srcdark={tag.srcdark}
+                    width={dimension}
+                    height={dimension}
+                    title={tag.title}
+                  />
                 </li>
               ))}
             </ul>
