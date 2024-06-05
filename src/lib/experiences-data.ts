@@ -15,7 +15,48 @@ export const experiencesData = [
       "• Implementing object-based alert throttling",
       "• ???",
     ],
-    tags: ["Python", "C++", "OpenCV", "ROS", "AWS KVS", "AWS KDS"],
+    tags: [
+      {
+        srclight: "/skills-images/python.svg",
+        srcdark: "/skills-images/python.svg",
+        title: "Python",
+      },
+      {
+        srclight: "/skills-images/cplusplus.svg",
+        srcdark: "/skills-images/cplusplus.svg",
+        title: "C++",
+      },
+      {
+        srclight: "/skills-images/docker.svg",
+        srcdark: "/skills-images/docker.svg",
+        title: "Docker",
+      },
+      {
+        srclight: "/skills-images/opencv.svg",
+        srcdark: "/skills-images/opencv.svg",
+        title: "OpenCV",
+      },
+      {
+        srclight: "/skills-images/ros.svg",
+        srcdark: "/skills-images/ros.svg",
+        title: "ROS",
+      },
+      {
+        srclight: "/skills-images/aws.svg",
+        srcdark: "/skills-images/aws-dark.svg",
+        title: "AWS",
+      },
+      {
+        srclight: "/skills-images/bitbucket.svg",
+        srcdark: "/skills-images/bitbucket.svg",
+        title: "Bitbucket",
+      },
+      {
+        srclight: "/skills-images/jira.svg",
+        srcdark: "/skills-images/jira.svg",
+        title: "Jira",
+      },
+    ],
   },
   {
     title: "Year 1 Semester 2",
