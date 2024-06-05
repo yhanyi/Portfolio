@@ -17,7 +17,7 @@ export default function Home() {
             <ScrambledText
               text="Yeoh Han Yi"
               speed={50}
-              className=""
+              className="text-xl sm:text-2xl"
               textOptions="bg-gradient-to-r from-blueOne to-blueTwo bg-clip-text text-transparent"
             />
           </span>
