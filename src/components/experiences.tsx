@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -8,9 +8,26 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import { experiencesData } from "@/lib/experiences-data";
 import { useTheme } from "@/components/theme-context";
+import SkillHover from "@/components/skill-hover";
 
 export default function Experiences() {
   const { theme } = useTheme();
+  const [dimension, setDimension] = useState(50);
+  const updateDimension = () => {
+    if (typeof window !== "undefined") {
+      setDimension(window.innerWidth >= 768 ? 30 : 20);
+    }
+  };
+  useEffect(() => {
+    updateDimension();
+    const handleResize = () => {
+      updateDimension();
+    };
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.addEventListener("resize", handleResize);
+    };
+  }, [dimension]);
 
   return (
     <div>
@@ -58,13 +75,16 @@ export default function Experiences() {
               </div>
 
               {item.tags ? (
-                <ul className="flex flex-wrap gap-2 my-2 sm:my-5">
-                  {item.tags.map((tag, index) => (
-                    <li
-                      className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
-                      key={index}
-                    >
-                      {tag}
+                <ul className="flex flex-wrap gap-2 my-2 sm:my-5 justify-between">
+                  {item.tags.map((tag, id) => (
+                    <li key={id}>
+                      <SkillHover
+                        srclight={tag.srclight}
+                        srcdark={tag.srcdark}
+                        width={dimension}
+                        height={dimension}
+                        title={tag.title}
+                      />
                     </li>
                   ))}
                 </ul>
