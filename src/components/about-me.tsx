@@ -20,7 +20,7 @@ export default function About() {
         <p className="my-4 text-xs md:text-base sm:text-sm">
           I&apos;m currently exploring various fields, heavily inclining towards
           machine learning / artificial intelligence and quantitative
-          development.
+          development / high-frequency trading.
         </p>
         <p className="my-4 text-xs md:text-base sm:text-sm">
           I&apos;ve always been fascinated by cutting-edge technology, and my
@@ -33,7 +33,7 @@ export default function About() {
           competitive.
         </p>
         <p className="my-4 text-xs text-gray-500">
-          (Website updated 30 May 2024)
+          (Website updated 07 June 2024)
         </p>
       </div>
     </motion.div>
