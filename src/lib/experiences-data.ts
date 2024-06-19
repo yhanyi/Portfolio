@@ -11,9 +11,13 @@ export const experiencesData = [
     icon: React.createElement(TbDeviceComputerCamera),
     date: "May 2024 - August 2024",
     description: [
-      "Video Analytics Department",
-      "• Implementing object-based alert throttling",
-      "• ???",
+      "Video Analytics",
+      "• Developed and deployed object-based tracking algorithms for a fleet of security robots, enhancing real-time object detection",
+      "• Dockerized software and streamlined image processing pipelines using AWS cloud APIs, improving efficiency and scalability",
+      "• Authored thorough documentation and optimised codebases, significantly reducing technical debt and facilitating future development",
+      "• Conducted extensive testing and benchmarking of computer vision models including YOLO",
+      "• Performed comprehensive data cleaning, preprocessing, and pipelining of large in-house datasets to ensure readiness for production deployment",
+      "• Worked in and collaborated with small cross-functional teams using AGILE methodology to integrate software with hardware and ensure seamless operation of robots",
     ],
     tags: [
       {
@@ -35,6 +39,11 @@ export const experiencesData = [
         srclight: "/skills-images/opencv.svg",
         srcdark: "/skills-images/opencv.svg",
         title: "OpenCV",
+      },
+      {
+        srclight: "/skills-images/yolo.svg",
+        srcdark: "/skills-images/yolo.svg",
+        title: "Ultralytics YOLO",
       },
       {
         srclight: "/skills-images/ros.svg",
