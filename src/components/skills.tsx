@@ -12,6 +12,8 @@ import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 import { skillsData } from "@/lib/skills-data";
 
+import SkillsGlobe from "@/components/skills-globe";
+
 type SkillItemProps = {
   srclight: string;
   srcdark: string;
@@ -152,7 +154,7 @@ export default function Skills() {
         className="flex flex-col items-center justify-center gap-3 h-full max-w-xl relative"
         style={{ transform: "scale(0.9)" }}
       >
-        <div className="flex flex-row justify-around flex-wrap gap-20 items-center">
+        {/* <div className="flex flex-row justify-around flex-wrap gap-20 items-center">
           {skillsData.map((item, index) => (
             <SkillItem
               key={item.id}
@@ -166,6 +168,9 @@ export default function Skills() {
               id={item.id}
             />
           ))}
+        </div> */}
+        <div>
+          <SkillsGlobe />
         </div>
       </div>
     </>
