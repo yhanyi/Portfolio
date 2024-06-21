@@ -6,8 +6,8 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        light: "#fffcfc",
-        dark: "#020713",
+        light: "#ffffff",
+        dark: "#000000",
         primary: "#cffbfe",
         primaryDark: "#81e6d9",
         blueOne: "#08f6d4",
