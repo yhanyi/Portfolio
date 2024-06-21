@@ -27,7 +27,7 @@ export default function Home() {
         </div>
       </div>
       <div className="flex items-center justify-center">
-        <span className="rounded-xl text-center p-2 my-20 font-bold text-2xl text-dark dark:text-light">
+        <span className="rounded-xl text-center p-2 my-10 font-bold text-2xl text-dark dark:text-light">
           Tools & Technologies
         </span>
       </div>
