@@ -51,23 +51,13 @@ const renderSimpleIcon = ({
 
   return (
     <a {...a}>
-      <div style={{ width: size, height: size, position: "relative" }}>
+      <div style={{ width: 42, height: 42, position: "relative" }}>
         <Image
           src={localSvgPath}
           alt={icon.title}
           objectFit="contain"
-          width={42}
-          height={42}
-          className="flex dark:hidden"
-          {...imgProps}
-        />
-        <Image
-          src={localSvgPath}
-          alt={icon.title}
-          objectFit="contain"
-          width={42}
-          height={42}
-          className="flex dark:hidden"
+          width={42 as number}
+          sizes={42 as number}
           {...imgProps}
         />
       </div>
