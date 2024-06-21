@@ -66,7 +66,7 @@ export const projectsData = [
   },
   {
     title: "???",
-    description: "[WIP] Mini project for fun :)",
+    description: "[WIP]",
     date: "May 2024 - Present",
     imageUrl: placeholder,
     demoLink: null,
@@ -76,31 +76,6 @@ export const projectsData = [
         srclight: "/skills-images/cplusplus.svg",
         srcdark: "/skills-images/cplusplus.svg",
         title: "C++",
-      },
-      {
-        srclight: "/skills-images/rust.svg",
-        srcdark: "/skills-images/rust-dark.svg",
-        title: "Rust",
-      },
-    ],
-  },
-  {
-    title: "???",
-    description: "[WIP] Mini project for fun :)",
-    date: "May 2024 - Present",
-    imageUrl: placeholder,
-    demoLink: null,
-    githubLink: null,
-    tags: [
-      {
-        srclight: "/skills-images/cplusplus.svg",
-        srcdark: "/skills-images/cplusplus.svg",
-        title: "C++",
-      },
-      {
-        srclight: "/skills-images/mlpack.svg",
-        srcdark: "/skills-images/mlpack.svg",
-        title: "MLPack",
       },
     ],
   },
