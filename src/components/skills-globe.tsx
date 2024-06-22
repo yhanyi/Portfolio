@@ -1,3 +1,6 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable @next/next/no-img-element */
+
 "use client";
 
 import React, { useEffect, useState, useRef, useMemo } from "react";
@@ -51,16 +54,7 @@ const renderSimpleIcon = ({
 
   return (
     <a {...a}>
-      <div style={{ width: 42, height: 42, position: "relative" }}>
-        <Image
-          src={localSvgPath}
-          alt={icon.title}
-          objectFit="contain"
-          width={42 as number}
-          sizes={42 as number}
-          {...imgProps}
-        />
-      </div>
+      <img {...i} />
     </a>
   );
 };
