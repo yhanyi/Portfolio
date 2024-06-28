@@ -47,7 +47,7 @@ export default function MagnetButton() {
       >
         <MdOutlineArrowUpward className="relative z-10 rotate-45 text-3xl text-dark dark:text-light transition-all duration-700 ease-out group-hover:rotate-90" />
 
-        <div className="absolute inset-0 z-0 scale-0 rounded-full bg-primary dark:bg-primaryDark transition-transform duration-700 ease-out group-hover:scale-100" />
+        <div className="absolute inset-0 z-0 scale-0 rounded-full bg-blueOne transition-transform duration-700 ease-out group-hover:scale-100" />
       </motion.button>
     </Link>
   );
