@@ -19,8 +19,7 @@ export default function About() {
       <div className="">
         <p className="my-4 text-xs md:text-base sm:text-sm">
           I&apos;m currently exploring various fields, heavily inclining towards
-          machine learning / artificial intelligence and quantitative
-          development / high-frequency trading.
+          machine learning and quantitative development/high-frequency trading.
         </p>
         <p className="my-4 text-xs md:text-base sm:text-sm">
           I&apos;ve always been fascinated by cutting-edge technology, and my
@@ -28,12 +27,11 @@ export default function About() {
           next groundbreaking technology.
         </p>
         <p className="my-4 text-xs md:text-base sm:text-sm">
-          I started my coding journey much later than many of my peers, but my
-          strong willingness to learn and improve my skills allows me to remain
-          competitive.
+          I started my coding journey later than many of my peers, but my strong
+          willingness to learn and improve allows me to remain competitive.
         </p>
         <p className="my-4 text-xs text-gray-500">
-          (Website updated 07 June 2024)
+          (Website last updated on 29 June 2024.)
         </p>
       </div>
     </motion.div>
