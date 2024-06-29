@@ -127,7 +127,7 @@ const ExperienceItem = ({
 
       {tags ? (
         <Reveal width="w-full">
-          <ul className="flex flex-wrap gap-5 mb-10 p-5 justify-between">
+          <ul className="flex flex-wrap gap-5 mb-10 p-5">
             {tags.map((tag: any, id: number) => (
               <li key={id}>
                 <SkillHover

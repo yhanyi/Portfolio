@@ -2,7 +2,7 @@ export const experiencesData = [
   {
     title: "Software Engineering Intern",
     position: "Kabam Robotics",
-    time: "May 2024 - August 2024",
+    time: "May 2024 - Aug 2024",
     location: "Singapore",
     description: [
       "Video Analytics",
@@ -37,7 +37,7 @@ export const experiencesData = [
       {
         srclight: "/skills-images/yolo.svg",
         srcdark: "/skills-images/yolo.svg",
-        title: "Ultralytics YOLO",
+        title: "YOLO",
       },
       {
         srclight: "/skills-images/ros.svg",
@@ -64,7 +64,7 @@ export const experiencesData = [
   {
     title: "Year 1 Semester 2",
     position: "National University of Singapore",
-    time: "January 2024 - May 2024",
+    time: "Jan 2024 - May 2024",
     location: "Singapore",
     description: [
       "Semester GPA: 4.5 | Cumulative GPA: 4.55",
@@ -79,13 +79,12 @@ export const experiencesData = [
       "Competitions and Events:",
       "• Health Hack 2024",
     ],
-    tech: [],
     tags: null,
   },
   {
     title: "Year 1 Semester 1",
     position: "National University of Singapore",
-    time: "August 2023 - December 2023",
+    time: "Aug 2023 - Dec 2023",
     location: "Singapore",
     description: [
       "Semester GPA: 4.625 | Cumulative GPA: 4.6",
@@ -102,7 +101,7 @@ export const experiencesData = [
   {
     title: "GCE A-Levels",
     position: "Dunman High School",
-    time: "January 2015 - December 2020",
+    time: "Jan 2015 - Dec 2020",
     location: "Singapore",
     description: [
       "Grade: 88.75/90 Rank Points",
