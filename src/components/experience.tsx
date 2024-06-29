@@ -83,24 +83,26 @@ const ExperienceItem = ({
     };
   }, [dimension]);
   return (
-    <div className="px-10">
+    <div className="md:px-10 my-10">
       <div className="flex items-center justify-between mb-2">
         <Reveal>
-          <span className="font-bold text-xl">{title}</span>
+          <span className="font-bold text-base sm:text-lg md:text-xl">
+            {title}
+          </span>
         </Reveal>
         <Reveal>
-          <span>{time}</span>
+          <span className="text-sm md:text-base">{time}</span>
         </Reveal>
       </div>
 
       <div className="flex items-center justify-between mb-4">
         <Reveal>
-          <span className="text-blueTwo dark:text-blueOne font-bold">
+          <span className="text-blueTwo dark:text-blueOne font-bold text-sm md:text-base">
             {position}
           </span>
         </Reveal>
         <Reveal>
-          <span>{location}</span>
+          <span className="text-sm md:text-base">{location}</span>
         </Reveal>
       </div>
 
