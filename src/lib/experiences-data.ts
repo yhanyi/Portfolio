@@ -1,15 +1,9 @@
-import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaLaptopCode } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
-import { TbDeviceComputerCamera } from "react-icons/tb";
-
 export const experiencesData = [
   {
-    title: "Software Engineering Intern [ONGOING]",
-    location: " @ Kabam Robotics",
-    icon: React.createElement(TbDeviceComputerCamera),
-    date: "May 2024 - August 2024",
+    title: "Software Engineering Intern",
+    position: "Kabam Robotics",
+    time: "May 2024 - August 2024",
+    location: "Singapore",
     description: [
       "Video Analytics",
       "• Developed and deployed object-based tracking algorithms for a fleet of security robots, enhancing real-time object detection",
@@ -69,9 +63,9 @@ export const experiencesData = [
   },
   {
     title: "Year 1 Semester 2",
-    location: "@ National University of Singapore",
-    icon: React.createElement(FaLaptopCode),
-    date: "January 2024 - May 2024",
+    position: "National University of Singapore",
+    time: "January 2024 - May 2024",
+    location: "Singapore",
     description: [
       "Semester GPA: 4.5 | Cumulative GPA: 4.55",
       "Relevant Modules:",
@@ -85,13 +79,14 @@ export const experiencesData = [
       "Competitions and Events:",
       "• Health Hack 2024",
     ],
+    tech: [],
     tags: null,
   },
   {
     title: "Year 1 Semester 1",
-    location: "@ National University of Singapore",
-    icon: React.createElement(CgWorkAlt),
-    date: "August 2023 - December 2023",
+    position: "National University of Singapore",
+    time: "August 2023 - December 2023",
+    location: "Singapore",
     description: [
       "Semester GPA: 4.625 | Cumulative GPA: 4.6",
       "Relevant Modules:",
@@ -106,13 +101,13 @@ export const experiencesData = [
 
   {
     title: "GCE A-Levels",
-    location: "Dunman High School",
-    date: "January 2015 - December 2020",
-    icon: React.createElement(LuGraduationCap),
+    position: "Dunman High School",
+    time: "January 2015 - December 2020",
+    location: "Singapore",
     description: [
       "Grade: 88.75/90 Rank Points",
-      "Studied H3 Physics, H2 Physics, H2 Chemistry, H2 Mathematics, H2 Economics",
+      "• Studied H3 Physics, H2 Physics, H2 Chemistry, H2 Mathematics, H2 Economics",
     ],
     tags: null,
   },
-] as const;
+];
