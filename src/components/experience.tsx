@@ -91,7 +91,7 @@ const ExperienceItem = ({
           </span>
         </Reveal>
         <Reveal>
-          <span className="text-sm md:text-base">{time}</span>
+          <span className="text-sm md:text-base hidden sm:block">{time}</span>
         </Reveal>
       </div>
 
@@ -100,6 +100,17 @@ const ExperienceItem = ({
           <span className="text-blueTwo dark:text-blueOne font-bold text-sm md:text-base">
             {position}
           </span>
+        </Reveal>
+        <Reveal>
+          <span className="text-sm md:text-base hidden sm:block">
+            {location}
+          </span>
+        </Reveal>
+      </div>
+
+      <div className="sm:hidden items-center justify-between mb-4">
+        <Reveal>
+          <span className="text-sm md:text-base">{time}</span>
         </Reveal>
         <Reveal>
           <span className="text-sm md:text-base">{location}</span>
