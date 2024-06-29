@@ -1,7 +1,7 @@
 "use client";
 
 import About from "@/components/about-me";
-import Experiences from "@/components/experiences";
+import Experience from "@/components/experience";
 import Skills from "@/components/skills";
 import React, { useEffect } from "react";
 import TypewriterText from "@/components/typewriter-text";
@@ -40,7 +40,7 @@ export default function Home() {
           Education & Experiences
         </span>
       </div>
-      <Experiences />
+      <Experience />
     </main>
   );
 }
