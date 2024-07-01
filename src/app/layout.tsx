@@ -20,6 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth">
       <body
+        id="root"
         className={`font-sans bg-light text-dark dark:bg-dark dark:text-light relative`}
       >
         <ThemeContextProvider>
