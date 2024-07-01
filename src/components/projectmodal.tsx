@@ -17,7 +17,7 @@ interface Props {
   imgSrc: StaticImageData;
   code: string | null;
   projectLink: string | null;
-  tags: { srclight: string; srcdark: string; title: string }[];
+  tags: any[];
   modalContent: JSX.Element;
 }
 

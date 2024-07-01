@@ -58,7 +58,7 @@ interface Props {
   description: string;
   projectLink: string | null;
   imgSrc: StaticImageData;
-  tags: { srclight: string; srcdark: string; title: string }[];
+  tags: any[];
   title: string;
   code: string | null;
 }
