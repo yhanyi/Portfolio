@@ -1,7 +1,8 @@
 "use client";
 
 import React, { useEffect } from "react";
-import Projects from "@/components/projects";
+import { Project } from "@/components/project";
+import { projects } from "@/lib/project-data";
 
 export default function Home() {
   // FIXME: Temporary fix to load pages at the top.
@@ -18,7 +19,11 @@ export default function Home() {
           Projects
         </span>
       </div>
-      <Projects />
+      <div className="grid gap-12 grid-cols-1 md:grid-cols-2">
+        {projects.map((project) => {
+          return <Project key={project.title} {...project} />;
+        })}
+      </div>
     </main>
   );
 }

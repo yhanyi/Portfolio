@@ -8,14 +8,12 @@ import senpaigpt from "/public/project-images/senpaigpt.png";
 import tradingbotnotebook from "/public/project-images/tradingbotnotebook.png";
 import placeholder from "/public/project-images/placeholder.png";
 
-export const projectsData = [
+export const projects = [
   {
-    title: "??? ",
-    description: "[WIP] Orbital project.",
-    date: "May 2024 - Present",
-    imageUrl: placeholder,
-    demoLink: null,
-    githubLink: null,
+    title: "PaperHans",
+    imgSrc: placeholder,
+    code: null,
+    projectLink: null,
     tags: [
       {
         srclight: "/skills-images/python.svg",
@@ -63,14 +61,26 @@ export const projectsData = [
         title: "Firebase",
       },
     ],
+    description: "[WIP] Orbital project.",
+    modalContent: (
+      <>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
+          quia officia odio nulla consectetur aperiam ad tempora magni magnam
+          nesciunt.
+        </p>
+        <p>
+          Fuga id sapiente facere ipsa eius exercitationem officiis deleniti,
+          rerum dolorum. Deserunt soluta modi culpa animi.
+        </p>
+      </>
+    ),
   },
   {
     title: "???",
-    description: "[WIP]",
-    date: "May 2024 - Present",
-    imageUrl: placeholder,
-    demoLink: null,
-    githubLink: null,
+    imgSrc: placeholder,
+    code: null,
+    projectLink: null,
     tags: [
       {
         srclight: "/skills-images/cplusplus.svg",
@@ -78,17 +88,27 @@ export const projectsData = [
         title: "C++",
       },
     ],
+    description: "[WIP]",
+    modalContent: (
+      <>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
+          quia officia odio nulla consectetur aperiam ad tempora magni magnam
+          nesciunt.
+        </p>
+        <p>
+          Fuga id sapiente facere ipsa eius exercitationem officiis deleniti,
+          rerum dolorum. Deserunt soluta modi culpa animi.
+        </p>
+      </>
+    ),
   },
   {
     title: "Pytorch Trading Bot",
-    description:
-      "Learnt the basics of how to use Pytorch models (like Finbert) to analyze news sentiments and use it to make simple paper trading predictions. The news data is provided by Alpaca.",
-    date: "February 2024",
-    imageUrl: tradingbotnotebook,
-    demoLink:
+    imgSrc: tradingbotnotebook,
+    code: "https://github.com/yhanyi/MLNotebooks/blob/main/TradingBotTutorial.ipynb",
+    projectLink:
       "https://colab.research.google.com/github/yhanyi/MLNotebooks/blob/main/TradingBotTutorial.ipynb",
-    githubLink:
-      "https://github.com/yhanyi/MLNotebooks/blob/main/TradingBotTutorial.ipynb",
     tags: [
       {
         srclight: "/skills-images/python.svg",
@@ -111,15 +131,27 @@ export const projectsData = [
         title: "Alpaca",
       },
     ],
+    description:
+      "Learnt the basics of how to use Pytorch models (like Finbert) to analyze news sentiments and use it to make simple paper trading predictions. The news data is provided by Alpaca.",
+    modalContent: (
+      <>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
+          quia officia odio nulla consectetur aperiam ad tempora magni magnam
+          nesciunt.
+        </p>
+        <p>
+          Fuga id sapiente facere ipsa eius exercitationem officiis deleniti,
+          rerum dolorum. Deserunt soluta modi culpa animi.
+        </p>
+      </>
+    ),
   },
   {
     title: "SenpaiGPT",
-    description:
-      "Quick ChatGPT clone made so I can use GPT-4.0's API without using paying 20 USD a month. Chats are stored in Firebase. Link redacted since anyone with a Google account can login and use my API :/",
-    date: "January 2024",
-    imageUrl: senpaigpt,
-    demoLink: null,
-    githubLink: null,
+    imgSrc: senpaigpt,
+    code: null,
+    projectLink: null,
     tags: [
       {
         srclight: "/skills-images/nextjs.svg",
@@ -142,15 +174,27 @@ export const projectsData = [
         title: "Firebase",
       },
     ],
+    description:
+      "Quick ChatGPT clone made so I can use GPT-4.0's API without using paying 20 USD a month. Chats are stored in Firebase. Link redacted since anyone with a Google account can login and use my API :/",
+    modalContent: (
+      <>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
+          quia officia odio nulla consectetur aperiam ad tempora magni magnam
+          nesciunt.
+        </p>
+        <p>
+          Fuga id sapiente facere ipsa eius exercitationem officiis deleniti,
+          rerum dolorum. Deserunt soluta modi culpa animi.
+        </p>
+      </>
+    ),
   },
   {
     title: "Personal Portfolio",
-    description:
-      "Migrated my Javascript portfolio to Typescript, including context providers and hooks with greater focus on extendability and responsiveness, as well as simple ThreeJS concepts.",
-    date: "January 2024 - Present",
-    imageUrl: portfolio4,
-    demoLink: "https://yeohhanyi.vercel.app/",
-    githubLink: null,
+    imgSrc: portfolio4,
+    code: null,
+    projectLink: "https://yeohhanyi.vercel.app/",
     tags: [
       {
         srclight: "/skills-images/nextjs.svg",
@@ -173,15 +217,27 @@ export const projectsData = [
         title: "ThreeJS",
       },
     ],
+    description:
+      "Migrated my Javascript portfolio to Typescript, including context providers and hooks with greater focus on extendability and responsiveness, as well as simple ThreeJS concepts.",
+    modalContent: (
+      <>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
+          quia officia odio nulla consectetur aperiam ad tempora magni magnam
+          nesciunt.
+        </p>
+        <p>
+          Fuga id sapiente facere ipsa eius exercitationem officiis deleniti,
+          rerum dolorum. Deserunt soluta modi culpa animi.
+        </p>
+      </>
+    ),
   },
   {
     title: "Arknights Particles",
-    description:
-      "Refactored old ThreeJS boilerplate code to reverse-engineer a particle effect from a game website. Passion project built while learning basic ThreeJS during freshman winter break.",
-    date: "December 2023 - January 2024",
-    imageUrl: akparticles,
-    demoLink: "https://yeohhanyi-arknights-particles.vercel.app/",
-    githubLink: "https://github.com/yhanyi/ArknightsParticles",
+    imgSrc: akparticles,
+    code: "https://github.com/yhanyi/ArknightsParticles",
+    projectLink: "https://yeohhanyi-arknights-particles.vercel.app/",
     tags: [
       {
         srclight: "/skills-images/nextjs.svg",
@@ -199,15 +255,27 @@ export const projectsData = [
         title: "ThreeJS",
       },
     ],
+    description:
+      "Refactored old ThreeJS boilerplate code to reverse-engineer a particle effect from a game website. Passion project built while learning basic ThreeJS during freshman winter break.",
+    modalContent: (
+      <>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
+          quia officia odio nulla consectetur aperiam ad tempora magni magnam
+          nesciunt.
+        </p>
+        <p>
+          Fuga id sapiente facere ipsa eius exercitationem officiis deleniti,
+          rerum dolorum. Deserunt soluta modi culpa animi.
+        </p>
+      </>
+    ),
   },
   {
     title: "Digits Predictor",
-    description:
-      "A simple webapp that takes a user input drawn on a canvas object, converts it to features to be predicted by a pre-trained Tensorflow model, and Chart.js plots the confidence of the model.",
-    date: "December 2023",
-    imageUrl: cnndigits,
-    demoLink: "https://yhanyi.github.io/CNNDigits/",
-    githubLink: "https://github.com/yhanyi/CNNDigits",
+    imgSrc: cnndigits,
+    code: "https://github.com/yhanyi/CNNDigits",
+    projectLink: "https://yhanyi.github.io/CNNDigits/",
     tags: [
       {
         srclight: "/skills-images/tensorflow.svg",
@@ -230,15 +298,27 @@ export const projectsData = [
         title: "CSS3",
       },
     ],
+    description:
+      "A simple webapp that takes a user input drawn on a canvas object, converts it to features to be predicted by a pre-trained Tensorflow model, and Chart.js plots the confidence of the model.",
+    modalContent: (
+      <>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
+          quia officia odio nulla consectetur aperiam ad tempora magni magnam
+          nesciunt.
+        </p>
+        <p>
+          Fuga id sapiente facere ipsa eius exercitationem officiis deleniti,
+          rerum dolorum. Deserunt soluta modi culpa animi.
+        </p>
+      </>
+    ),
   },
   {
     title: "Typescript Portfolio",
-    description:
-      "A single-page website with NextJS, built while learning Typescript and learning about context providers.",
-    date: "December 2023",
-    imageUrl: portfolio3,
-    demoLink: "https://yeohhanyi2.vercel.app/",
-    githubLink: null,
+    imgSrc: portfolio3,
+    code: null,
+    projectLink: "https://yeohhanyi2.vercel.app/",
     tags: [
       {
         srclight: "/skills-images/nextjs.svg",
@@ -261,15 +341,27 @@ export const projectsData = [
         title: "React",
       },
     ],
+    description:
+      "A single-page website with NextJS, built while learning Typescript and learning about context providers.",
+    modalContent: (
+      <>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
+          quia officia odio nulla consectetur aperiam ad tempora magni magnam
+          nesciunt.
+        </p>
+        <p>
+          Fuga id sapiente facere ipsa eius exercitationem officiis deleniti,
+          rerum dolorum. Deserunt soluta modi culpa animi.
+        </p>
+      </>
+    ),
   },
   {
     title: "Javascript Portfolio",
-    description:
-      "First multi-page website using the NextJS framework in React, using Javascript and learning more about basic React hooks.",
-    date: "December 2023",
-    imageUrl: portfolio2,
-    demoLink: "https://yhy-react-test.vercel.app/",
-    githubLink: null,
+    imgSrc: portfolio2,
+    code: null,
+    projectLink: "https://yhy-react-test.vercel.app/",
     tags: [
       {
         srclight: "/skills-images/nextjs.svg",
@@ -292,15 +384,27 @@ export const projectsData = [
         title: "React",
       },
     ],
+    description:
+      "First multi-page website using the NextJS framework in React, using Javascript and learning more about basic React hooks.",
+    modalContent: (
+      <>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
+          quia officia odio nulla consectetur aperiam ad tempora magni magnam
+          nesciunt.
+        </p>
+        <p>
+          Fuga id sapiente facere ipsa eius exercitationem officiis deleniti,
+          rerum dolorum. Deserunt soluta modi culpa animi.
+        </p>
+      </>
+    ),
   },
   {
     title: "HTML & CSS Portfolio",
-    description:
-      "My first website, built while learning basic HTML, CSS and Javascript.",
-    date: "December 2023",
-    imageUrl: portfolio1,
-    demoLink: null,
-    githubLink: null,
+    imgSrc: senpaigpt,
+    code: null,
+    projectLink: null,
     tags: [
       {
         srclight: "/skills-images/javascript.svg",
@@ -318,5 +422,20 @@ export const projectsData = [
         title: "CSS3",
       },
     ],
+    description:
+      "My first website, built while learning basic HTML, CSS and Javascript.",
+    modalContent: (
+      <>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
+          quia officia odio nulla consectetur aperiam ad tempora magni magnam
+          nesciunt.
+        </p>
+        <p>
+          Fuga id sapiente facere ipsa eius exercitationem officiis deleniti,
+          rerum dolorum. Deserunt soluta modi culpa animi.
+        </p>
+      </>
+    ),
   },
 ] as const;
