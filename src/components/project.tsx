@@ -141,13 +141,13 @@ export const Project = ({
 
               {code ? (
                 <Link href={code} target="_blank" rel="nofollow">
-                  <AiFillGithub className="text-xl text-zinc-300 hover:text-indigo-300 transition-colors" />
+                  <AiFillGithub className="text-xl text-gray-500 hover:text-blueTwo dark:hover:text-blueOne transition-colors" />
                 </Link>
               ) : null}
 
               {projectLink ? (
                 <Link href={projectLink} target="_blank" rel="nofollow">
-                  <AiOutlineExport className="text-xl text-zinc-300 hover:text-indigo-300 transition-colors" />
+                  <AiOutlineExport className="text-xl text-gray-500 hover:text-blueTwo dark:hover:text-blueOne transition-colors" />
                 </Link>
               ) : null}
             </div>
@@ -168,13 +168,13 @@ export const Project = ({
             </ul>
           </Reveal>
           <Reveal>
-            <p className="text-zinc-300 leading-relaxed">
+            <p className="text-dark dark:text-light leading-relaxed">
               {description}{" "}
               <span
-                className="inline-block text-sm text-indigo-300 cursor-pointer"
+                className="inline-block text-sm text-blueTwo dark:text-blueOne cursor-pointer"
                 onClick={() => setIsOpen(true)}
               >
-                Learn more {">"}
+                Learn More {">"}
               </span>
             </p>
           </Reveal>

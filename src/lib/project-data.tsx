@@ -64,15 +64,8 @@ export const projects = [
     description: "[WIP] Orbital project.",
     modalContent: (
       <>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
-          quia officia odio nulla consectetur aperiam ad tempora magni magnam
-          nesciunt.
-        </p>
-        <p>
-          Fuga id sapiente facere ipsa eius exercitationem officiis deleniti,
-          rerum dolorum. Deserunt soluta modi culpa animi.
-        </p>
+        <p>May 2024 - Present</p>
+        <p>My Orbital project. Not disclosing it for now.</p>
       </>
     ),
   },
@@ -88,17 +81,13 @@ export const projects = [
         title: "C++",
       },
     ],
-    description: "[WIP]",
+    description: "[WIP] Mini project I'm doing over the summer break for fun.",
     modalContent: (
       <>
+        <p>May 2024 - Present</p>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
-          quia officia odio nulla consectetur aperiam ad tempora magni magnam
-          nesciunt.
-        </p>
-        <p>
-          Fuga id sapiente facere ipsa eius exercitationem officiis deleniti,
-          rerum dolorum. Deserunt soluta modi culpa animi.
+          I like C++ so it makes sense for me to try making some stuff in C++
+          right?
         </p>
       </>
     ),
@@ -135,15 +124,8 @@ export const projects = [
       "Learnt the basics of how to use Pytorch models (like Finbert) to analyze news sentiments and use it to make simple paper trading predictions. The news data is provided by Alpaca.",
     modalContent: (
       <>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
-          quia officia odio nulla consectetur aperiam ad tempora magni magnam
-          nesciunt.
-        </p>
-        <p>
-          Fuga id sapiente facere ipsa eius exercitationem officiis deleniti,
-          rerum dolorum. Deserunt soluta modi culpa animi.
-        </p>
+        <p>January 2024</p>
+        <p>Wanted to see if I could make fat stonks using Python.</p>
       </>
     ),
   },
@@ -178,15 +160,16 @@ export const projects = [
       "Quick ChatGPT clone made so I can use GPT-4.0's API without using paying 20 USD a month. Chats are stored in Firebase. Link redacted since anyone with a Google account can login and use my API :/",
     modalContent: (
       <>
+        <p>December 2023</p>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
-          quia officia odio nulla consectetur aperiam ad tempora magni magnam
-          nesciunt.
+          I wanted to use ChatGPT 4 but I was kinda broke and I heard the GPT4
+          developer API was cheaper for my monthly usage.
         </p>
         <p>
-          Fuga id sapiente facere ipsa eius exercitationem officiis deleniti,
-          rerum dolorum. Deserunt soluta modi culpa animi.
+          So I made a simple clone to interface with GPT with my own OpenAPI
+          key.
         </p>
+        <p>I ended up being too lazy to use it when school started though.</p>
       </>
     ),
   },
@@ -221,14 +204,16 @@ export const projects = [
       "Migrated my Javascript portfolio to Typescript, including context providers and hooks with greater focus on extendability and responsiveness, as well as simple ThreeJS concepts.",
     modalContent: (
       <>
+        <p>December 2023 - January 2024</p>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
-          quia officia odio nulla consectetur aperiam ad tempora magni magnam
-          nesciunt.
+          I just thought making my website from scratch without excessive UI
+          library usage would be cool. I&apos;d get to make the components from
+          scratch which was fun for a while but the excitement slowly waned when
+          the difficulty of the components I wanted to make increased over time.
         </p>
         <p>
-          Fuga id sapiente facere ipsa eius exercitationem officiis deleniti,
-          rerum dolorum. Deserunt soluta modi culpa animi.
+          Now I&apos;m happy just maintaining it and adding content without
+          adding too many new features and components.
         </p>
       </>
     ),
@@ -259,15 +244,18 @@ export const projects = [
       "Refactored old ThreeJS boilerplate code to reverse-engineer a particle effect from a game website. Passion project built while learning basic ThreeJS during freshman winter break.",
     modalContent: (
       <>
+        <p>December 2023</p>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
-          quia officia odio nulla consectetur aperiam ad tempora magni magnam
-          nesciunt.
+          This was by far my favourite project over winter break. I saw a cool
+          particle effect that drew periodically rotating images on the website
+          for a game I played, and I wanted to emulate it somehow.
         </p>
         <p>
-          Fuga id sapiente facere ipsa eius exercitationem officiis deleniti,
-          rerum dolorum. Deserunt soluta modi culpa animi.
+          I found a prototype that wasn&apos;t very performant and using
+          outdated libraries and frameworks. So I rewrote a better one using
+          modern ThreeJS functionality and NextJS in Typescript.
         </p>
+        <p>This project took a lot of googling to complete.</p>
       </>
     ),
   },
@@ -302,14 +290,10 @@ export const projects = [
       "A simple webapp that takes a user input drawn on a canvas object, converts it to features to be predicted by a pre-trained Tensorflow model, and Chart.js plots the confidence of the model.",
     modalContent: (
       <>
+        <p>December 2023</p>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
-          quia officia odio nulla consectetur aperiam ad tempora magni magnam
-          nesciunt.
-        </p>
-        <p>
-          Fuga id sapiente facere ipsa eius exercitationem officiis deleniti,
-          rerum dolorum. Deserunt soluta modi culpa animi.
+          Was a cool idea to mix a bit of ML with frontend, but I didn&apos;t
+          have the skills and time to make a better version.
         </p>
       </>
     ),
@@ -345,14 +329,10 @@ export const projects = [
       "A single-page website with NextJS, built while learning Typescript and learning about context providers.",
     modalContent: (
       <>
+        <p>December 2023</p>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
-          quia officia odio nulla consectetur aperiam ad tempora magni magnam
-          nesciunt.
-        </p>
-        <p>
-          Fuga id sapiente facere ipsa eius exercitationem officiis deleniti,
-          rerum dolorum. Deserunt soluta modi culpa animi.
+          Followed a tutorial to learn some better frontend practices, but I
+          don&apos;t think I want to do fullstack anymore.
         </p>
       </>
     ),
@@ -388,21 +368,17 @@ export const projects = [
       "First multi-page website using the NextJS framework in React, using Javascript and learning more about basic React hooks.",
     modalContent: (
       <>
+        <p>December 2023</p>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
-          quia officia odio nulla consectetur aperiam ad tempora magni magnam
-          nesciunt.
-        </p>
-        <p>
-          Fuga id sapiente facere ipsa eius exercitationem officiis deleniti,
-          rerum dolorum. Deserunt soluta modi culpa animi.
+          HTML and CSS weren&apos;t the most fun, so I decided to learn React
+          and Tailwind.
         </p>
       </>
     ),
   },
   {
     title: "HTML & CSS Portfolio",
-    imgSrc: senpaigpt,
+    imgSrc: portfolio1,
     code: null,
     projectLink: null,
     tags: [
@@ -426,14 +402,10 @@ export const projects = [
       "My first website, built while learning basic HTML, CSS and Javascript.",
     modalContent: (
       <>
+        <p>December 2023</p>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
-          quia officia odio nulla consectetur aperiam ad tempora magni magnam
-          nesciunt.
-        </p>
-        <p>
-          Fuga id sapiente facere ipsa eius exercitationem officiis deleniti,
-          rerum dolorum. Deserunt soluta modi culpa animi.
+          Made with a lot of googling, not a lot of tutorials and learning, no
+          Git experience, no sense of aesthetics, and 1000 lines of CSS.
         </p>
       </>
     ),
