@@ -6,12 +6,11 @@ export const experiencesData = [
     location: "Singapore",
     description: [
       "Video Analytics",
-      "• Developed and deployed object-based tracking algorithms for a fleet of security robots, enhancing real-time object detection",
-      "• Dockerized software and streamlined image processing pipelines using AWS cloud APIs, improving efficiency and scalability",
-      "• Authored thorough documentation and optimised codebases, significantly reducing technical debt and facilitating future development",
-      "• Conducted extensive testing and benchmarking of computer vision models including YOLO",
-      "• Performed comprehensive data cleaning, preprocessing, and pipelining of large in-house datasets to ensure readiness for production deployment",
-      "• Worked in and collaborated with small cross-functional teams using AGILE methodology to integrate software with hardware and ensure seamless operation of robots",
+      "• Engineered and deployed object-based alert throttling algorithms for a fleet of security robots, enhancing real-time object detection.",
+      "• Executed extensive testing and benchmarking of cutting-edge computer vision models, including YOLOv10, to rigorously evaluate their suitability for production.",
+      "• Performed comprehensive data preparation, including cleaning, preprocessing, augmentation, and pipelining of image datasets, to facilitate custom model development and deployment.",
+      "• Authored detailed documentation and optimized codebases, reducing technical debt and ensuring scalable future development.",
+      "• Worked in and collaborated with small cross-functional teams using AGILE methodology to integrate software with hardware and ensure efficient operation of the robots.",
     ],
     tags: [
       {

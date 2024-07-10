@@ -8,17 +8,17 @@ export default function TypewriterText() {
         Hello, I&apos;m Han Yi!
       </h3>
       <h3 className="text-xl font-medium sm:text-2xl md:text-3xl lg:text-4xl my-20">
-        Computer Science & Statistics @ NUS
+        CS & Maths @ NUS
       </h3>
       <h3 className="text-xl font-medium  sm:text-2xl md:text-3xl lg:text-4xl">
         I&apos;m interested in
         <AnimatedText
           phrases={[
             "Machine Learning",
-            "Artificial Intelligence",
             "Quantitative Development",
-            "Software Engineering",
+            "Artificial Intelligence",
             "Algorithm Theory",
+            "Software Engineering",
           ]}
         />
       </h3>

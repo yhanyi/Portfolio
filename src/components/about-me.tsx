@@ -31,7 +31,7 @@ export default function About() {
           willingness to learn and improve allows me to remain competitive.
         </p>
         <p className="my-4 text-xs text-gray-500">
-          (Website last updated on 29 June 2024.)
+          (Website last updated on 10 July 2024.)
         </p>
       </div>
     </motion.div>
