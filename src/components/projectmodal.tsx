@@ -76,7 +76,7 @@ export const ProjectModal = ({
         <Image src={imgSrc} alt={`An image of the ${title} project.`} />
         <div className="p-8">
           <h4 className="text-3xl font-bold mb-2">{title}</h4>
-          <ul className="flex flex-wrap gap-5 mb-3 md:mb-5 p-5">
+          <ul className="flex flex-wrap gap-5 my-3 md:my-5">
             {tags.map((tag, id) => (
               <li key={id}>
                 <SkillHover

@@ -7,52 +7,6 @@ import React from "react";
 import Image, { StaticImageData } from "next/image";
 import SkillHover from "@/components/skill-hover";
 
-interface RevealProps {
-  children: JSX.Element | JSX.Element[];
-  width?: string;
-}
-
-const Reveal = ({ children, width = "w-fit" }: RevealProps) => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
-
-  const mainControls = useAnimation();
-  const slideControls = useAnimation();
-
-  useEffect(() => {
-    if (isInView) {
-      mainControls.start("visible");
-      slideControls.start("visible");
-    }
-  }, [isInView]);
-
-  return (
-    <div ref={ref} className={`relative overflow-hidden ${width}`}>
-      <motion.div
-        variants={{
-          hidden: { opacity: 0, y: 75 },
-          visible: { opacity: 1, y: 0 },
-        }}
-        initial="hidden"
-        animate={mainControls}
-        transition={{ duration: 0.5, delay: 0.25 }}
-      >
-        {children}
-      </motion.div>
-      <motion.div
-        variants={{
-          hidden: { left: 0 },
-          visible: { left: "100%" },
-        }}
-        initial="hidden"
-        animate={slideControls}
-        transition={{ duration: 0.5, ease: "easeIn" }}
-        className="absolute bottom-1 left-0 right-0 top-1 z-20 bg-blueTwo dark:bg-blueOne"
-      />
-    </div>
-  );
-};
-
 interface Props {
   modalContent: JSX.Element;
   description: string;
@@ -132,52 +86,48 @@ export const Project = ({
           />
         </div>
         <div className="mt-6">
-          <Reveal width="w-full">
-            <div className="flex items-center gap-2 w-full">
-              <h4 className="font-bold text-lg shrink-0 max-w-[calc(100%_-_150px)]">
-                {title}
-              </h4>
-              <div className="w-full h-[1px] bg-zinc-600" />
+          <div className="flex items-center gap-2 w-full">
+            <h4 className="font-bold text-lg shrink-0 max-w-[calc(100%_-_150px)]">
+              {title}
+            </h4>
+            <div className="w-full h-[1px] bg-zinc-600" />
 
-              {code ? (
-                <Link href={code} target="_blank" rel="nofollow">
-                  <AiFillGithub className="text-xl text-gray-500 hover:text-blueTwo dark:hover:text-blueOne transition-colors" />
-                </Link>
-              ) : null}
+            {code ? (
+              <Link href={code} target="_blank" rel="nofollow">
+                <AiFillGithub className="text-xl text-gray-500 hover:text-blueTwo dark:hover:text-blueOne transition-colors" />
+              </Link>
+            ) : null}
 
-              {projectLink ? (
-                <Link href={projectLink} target="_blank" rel="nofollow">
-                  <AiOutlineExport className="text-xl text-gray-500 hover:text-blueTwo dark:hover:text-blueOne transition-colors" />
-                </Link>
-              ) : null}
-            </div>
-          </Reveal>
-          <Reveal>
-            <ul className="flex flex-wrap gap-5 mb-3 md:mb-5 p-5">
-              {tags.map((tag, id) => (
-                <li key={id}>
-                  <SkillHover
-                    srclight={tag.srclight}
-                    srcdark={tag.srcdark}
-                    width={dimension}
-                    height={dimension}
-                    title={tag.title}
-                  />
-                </li>
-              ))}
-            </ul>
-          </Reveal>
-          <Reveal>
-            <p className="text-dark dark:text-light leading-relaxed">
-              {description}{" "}
-              <span
-                className="inline-block text-sm text-blueTwo dark:text-blueOne cursor-pointer"
-                onClick={() => setIsOpen(true)}
-              >
-                Learn More {">"}
-              </span>
-            </p>
-          </Reveal>
+            {projectLink ? (
+              <Link href={projectLink} target="_blank" rel="nofollow">
+                <AiOutlineExport className="text-xl text-gray-500 hover:text-blueTwo dark:hover:text-blueOne transition-colors" />
+              </Link>
+            ) : null}
+          </div>
+
+          <ul className="flex flex-wrap gap-5 my-3 md:my-5">
+            {tags.map((tag, id) => (
+              <li key={id}>
+                <SkillHover
+                  srclight={tag.srclight}
+                  srcdark={tag.srcdark}
+                  width={dimension}
+                  height={dimension}
+                  title={tag.title}
+                />
+              </li>
+            ))}
+          </ul>
+
+          <p className="text-dark dark:text-light leading-relaxed">
+            {description}{" "}
+            <span
+              className="inline-block text-sm text-blueTwo dark:text-blueOne cursor-pointer"
+              onClick={() => setIsOpen(true)}
+            >
+              Learn More {">"}
+            </span>
+          </p>
         </div>
       </motion.div>
       <ProjectModal
