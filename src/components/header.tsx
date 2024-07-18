@@ -6,9 +6,7 @@ import { links } from "@/lib/links-data";
 import Link from "next/link";
 import clsx from "clsx";
 import { useActiveSectionContext } from "@/components/active-section-context";
-import ThemeSwitch from "@/components/theme-switch";
-import MenuDropdown from "@/components/menu-dropdown";
-import NameDropdown from "@/components/name-dropdown";
+import TypewriterText from "./typewriter-text";
 
 export default function Header() {
   const { activeSection, setActiveSection, setTimeOfLastClick } =
@@ -17,28 +15,77 @@ export default function Header() {
   return (
     <header
       className={clsx(
-        { "top-[-10rem]": activeSection === "Home" },
-        "duration-500 z-[10] py-2 fixed top-0 flex justify-between md:justify-center w-full px-2 md:px-10 bg-light dark:bg-dark bg-opacity-80 dark:bg-opacity-80 gap-10"
+        { hidden: activeSection === "Home" },
+        "z-[10] w-full bg-light dark:bg-dark bg-opacity-80 dark:bg-opacity-80 backdrop-blur-[0.5rem] flex flex-col items-center my-10 gap-5"
       )}
     >
-      <NameDropdown />
-      <nav className="hidden md:flex justify-center items-center py-0 border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] h-[3.25rem] sm:w-[40rem] w-[20rem] rounded-full dark:bg-black dark:border-black/40 dark:bg-opacity/75">
-        <ul className="flex w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 dark:text-gray-400 sm:w-[initial] gap-5">
+      <div className="flex flex-col md:flex-row items-center justify-center py-4 md:py-8 px-2 md:px-10 border rounded-xl">
+        <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8">
+          <img
+            src="https://via.placeholder.com/150"
+            alt="Profile Picture"
+            className="w-24 h-24 md:w-32 md:h-32 rounded-full"
+          />
+          <div className="flex flex-col items-center gap-2 md:items-start">
+            <h1 className="text-2xl md:text-4xl font-bold">Yeoh Han Yi</h1>
+            <div>
+              <TypewriterText
+                phrases={[
+                  "Machine Learning",
+                  "Quantitative Development",
+                  "Artificial Intelligence",
+                  "Algorithm Theory",
+                  "Software Engineering",
+                ]}
+                classNames="text-base text-center md:text-left"
+              />
+            </div>
+            <div className="flex gap-2">CS & Maths @ NUS</div>
+            <div className="flex gap-2">
+              <Link
+                href="mailto:yeohhanyi0916@gmail.com"
+                target={"_blank"}
+                className="text-blue-500 hover:underline"
+              >
+                Email
+              </Link>
+              <Link
+                href="/yeohhanyi_resume.pdf"
+                download={true}
+                target={"_blank"}
+                className="text-blue-500 hover:underline"
+              >
+                Resume
+              </Link>
+              <Link
+                href="https://github.com/yhanyi"
+                className="text-blue-500 hover:underline"
+              >
+                Github
+              </Link>
+              <Link
+                href="https://www.linkedin.com/in/yeoh-han-yi/"
+                className="text-blue-500 hover:underline"
+              >
+                LinkedIn
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav className="w-fit rounded-full border border-1 p-2">
+        <ul className="flex items-center justify-center gap-1 sm:gap-5 py-2 text-sm md:text-base font-medium">
           {links.map((link) => (
-            <li
-              key={link.hash}
-              className="h-3/4 flex items-center justify-center relative"
-            >
+            <li key={link.hash} className="relative">
               <Link
                 href={link.hash}
                 onClick={() => {
                   setActiveSection(link.name);
                   setTimeOfLastClick(Date.now());
                 }}
-                className={clsx(
-                  "flex w-full items-center justify-center px-2 py-3 hover:text-black transition dark:hover:text-white",
-                  { "text-black dark:text-white": activeSection === link.name }
-                )}
+                className={clsx("px-3 py-2 hover:underline transition", {
+                  "text-black dark:text-white": activeSection === link.name,
+                })}
               >
                 {link.name}
                 {link.name === activeSection && (
@@ -53,10 +100,6 @@ export default function Header() {
           ))}
         </ul>
       </nav>
-      <div className="flex justify-center items-center gap-2">
-        <ThemeSwitch />
-        <MenuDropdown />
-      </div>
     </header>
   );
 }
