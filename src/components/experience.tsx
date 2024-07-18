@@ -1,53 +1,6 @@
-import React, { useRef, useEffect, useState } from "react";
-import { useAnimation, useInView, motion } from "framer-motion";
+import React, { useEffect, useState } from "react";
 import SkillHover from "./skill-hover";
 import { experiencesData } from "@/lib/experiences-data";
-
-interface RevealProps {
-  children: JSX.Element | JSX.Element[];
-  width?: string;
-}
-
-const Reveal = ({ children, width = "w-fit" }: RevealProps) => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
-
-  const mainControls = useAnimation();
-  const slideControls = useAnimation();
-
-  useEffect(() => {
-    if (isInView) {
-      mainControls.start("visible");
-      slideControls.start("visible");
-    }
-  }, [isInView]);
-
-  return (
-    <div ref={ref} className={`relative overflow-hidden ${width}`}>
-      <motion.div
-        variants={{
-          hidden: { opacity: 0, y: 75 },
-          visible: { opacity: 1, y: 0 },
-        }}
-        initial="hidden"
-        animate={mainControls}
-        transition={{ duration: 0.5, delay: 0.25 }}
-      >
-        {children}
-      </motion.div>
-      <motion.div
-        variants={{
-          hidden: { left: 0 },
-          visible: { left: "100%" },
-        }}
-        initial="hidden"
-        animate={slideControls}
-        transition={{ duration: 0.5, ease: "easeIn" }}
-        className="absolute bottom-1 left-0 right-0 top-1 z-20 bg-blueTwo dark:bg-blueOne"
-      />
-    </div>
-  );
-};
 
 interface Props {
   title: string;
@@ -84,63 +37,37 @@ const ExperienceItem = ({
   }, [dimension]);
   return (
     <div className="md:px-10 my-10">
-      <div className="flex items-center justify-between mb-2">
-        <Reveal>
+      <div className="flex justify-between mb-5 flex-col sm:flex-row">
+        <div className="flex flex-col">
           <span className="font-bold text-base sm:text-lg md:text-xl">
             {title}
           </span>
-        </Reveal>
-        <Reveal>
-          <span className="text-sm md:text-base hidden sm:block">{time}</span>
-        </Reveal>
-      </div>
+          <span className="font-bold text-sm md:text-base">{position}</span>
+        </div>
 
-      <div className="flex items-center justify-between mb-4">
-        <Reveal>
-          <span className="text-blueTwo dark:text-blueOne font-bold text-sm md:text-base">
-            {position}
-          </span>
-        </Reveal>
-        <Reveal>
-          <span className="text-sm md:text-base hidden sm:block">
-            {location}
-          </span>
-        </Reveal>
-      </div>
-
-      <div className="sm:hidden items-center justify-between mb-4">
-        <Reveal>
-          <span className="text-sm md:text-base">{time}</span>
-        </Reveal>
-        <Reveal>
-          <span className="text-sm md:text-base">{location}</span>
-        </Reveal>
+        <span className="text-sm md:text-base ">{time}</span>
       </div>
 
       {description.map((item) => (
-        <Reveal key={item}>
-          <p key={item} className="mb-6 leading-relaxed text-sm md:text-base">
-            {item}
-          </p>
-        </Reveal>
+        <p key={item} className="mb-6 leading-relaxed text-sm sm:text-base">
+          {item}
+        </p>
       ))}
 
       {tags ? (
-        <Reveal width="w-full">
-          <ul className="flex flex-wrap gap-5 mb-10 p-5">
-            {tags.map((tag: any, id: number) => (
-              <li key={id}>
-                <SkillHover
-                  srclight={tag.srclight}
-                  srcdark={tag.srcdark}
-                  width={dimension}
-                  height={dimension}
-                  title={tag.title}
-                />
-              </li>
-            ))}
-          </ul>
-        </Reveal>
+        <ul className="flex flex-wrap gap-5 mb-10 p-5">
+          {tags.map((tag: any, id: number) => (
+            <li key={id}>
+              <SkillHover
+                srclight={tag.srclight}
+                srcdark={tag.srcdark}
+                width={dimension}
+                height={dimension}
+                title={tag.title}
+              />
+            </li>
+          ))}
+        </ul>
       ) : null}
     </div>
   );
