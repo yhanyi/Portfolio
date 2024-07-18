@@ -9,7 +9,7 @@ export default function ThemeSwitch() {
 
   return (
     <button
-      className="z-10 p-2.5 w-[3rem] h-[3rem] bg-opacity-80 backgroup-blur-[0.5rem] border-opacity-40 shadow-2xl rounded-xl flex items-center justify-center hover:scale-105 active:scale-100 transition-all bg-white text-black dark:bg-black dark:text-white"
+      className="fixed bottom-5 right-5 z-10 p-2.5 w-[3rem] h-[3rem] bg-opacity-80 backgroup-blur-[0.5rem] border-opacity-40 shadow-2xl rounded-xl flex items-center justify-center hover:scale-105 active:scale-100 transition-all bg-white text-black dark:bg-black dark:text-white"
       onClick={toggleTheme}
     >
       {theme === "light" ? (
