@@ -31,8 +31,8 @@ export default function Error404() {
           Why not check out a few of my links? :D
         </p>
         <div className="flex flex-col xl:flex-row gap-10">
-          <PinContainer title="yeohhanyi.vercel.app">
-            <Link href="https://yeohhanyi.vercel.app">
+          <PinContainer title="yeohhanyi.dev">
+            <Link href="https://yeohhanyi.dev">
               <div className="flex basis-full flex-col p-4 tracking-tight text-dark dark:text-light sm:basis-1/2 w-[20rem] h-[20rem] ">
                 <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-dark dark:text-light">
                   Home
