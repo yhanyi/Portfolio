@@ -1,27 +1,43 @@
 "use client";
 
-import React, { useEffect } from "react";
-import CertsAbout from "@/components/about-certs";
+import React from "react";
 import Certificates from "@/components/certificates";
+import { motion } from "framer-motion";
 
 export default function Home() {
-  // FIXME: Temporary fix to load pages at the top.
-  useEffect(() => {
-    const positionString = localStorage.getItem("positon")!;
-    const position = parseInt(positionString, 10);
-    setTimeout(() => window.scrollTo(0, position), 0);
-  }, []);
-
   return (
-    <main className="mt-28 sm:mt-36 flex flex-col px-4">
+    <main className="flex flex-col px-4 max-w-4xl mx-auto">
       <div className="flex items-center justify-center">
-        <span className="rounded-xl text-center p-2 mb-10 font-bold text-2xl text-dark dark:text-light">
+        <span className="rounded-xl text-center p-2 font-bold text-2xl text-dark dark:text-light">
           Certificates
         </span>
       </div>
-      <div className="flex-[0.75]">
-        <CertsAbout />
-      </div>
+      <motion.div
+        className="flex flex-col"
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.175 }}
+      >
+        <p className="my-2 text-base px-2 sm:px-10">
+          I like learning and exploring more about different fields in the realm
+          of technology! Doing courses in my spare time adds a bit of fun to my
+          regular university coursework, and provides valuable insights into the
+          unique workflows of different tech domains.
+        </p>
+        <p className="my-2 text-base px-2 sm:px-10">
+          I have yet to obtain professional certificates such as the AWS
+          Certifications. So for now, this page is basically a display shelf of
+          some of the certificates from courses I have done in my free time.
+          Collating them gives me a tangible visual of what I have learnt thus
+          far, and reminds me to always continue the learning process.
+        </p>
+        <p className="my-2 text-base px-2 sm:px-10">
+          Please note that these courses are pursued primarily for personal
+          enrichment. While they showcase my commitment to continuous learning,
+          they may not comprehensively reflect my professional abilities in
+          these fields.
+        </p>
+      </motion.div>
       <Certificates />
     </main>
   );
