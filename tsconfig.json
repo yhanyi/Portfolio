@@ -30,7 +30,9 @@
     ".next/types/**/*.ts",
     "src/components/animated-theme-icons.jsx",
     "src/lib/skills-ball-data.js",
-    "src/components/particle-ring.jsx"
+    "src/components/particle-ring.jsx",
+    "src/components/firebasemarkdown.js",
+    "src/components/firebaseconfig.js"
   ],
   "exclude": ["node_modules"]
 }
