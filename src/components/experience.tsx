@@ -36,7 +36,7 @@ const ExperienceItem = ({
     };
   }, [dimension]);
   return (
-    <div className="md:px-10 my-10">
+    <div className="my-10">
       <div className="flex justify-between mb-5 flex-col sm:flex-row">
         <div className="flex flex-col">
           <span className="font-bold text-base sm:text-lg md:text-xl">

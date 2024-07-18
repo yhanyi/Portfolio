@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <main className="flex flex-col px-4 max-w-4xl mx-auto">
       <div className="flex flex-col overflow-hidden gap-10 justify-center items-center">
-        <div className="flex-[0.75]">
+        <div className="flex-col">
           <div className="flex items-center justify-center">
             <span className="rounded-xl text-center p-2 font-bold text-2xl text-dark dark:text-light">
               About Me
