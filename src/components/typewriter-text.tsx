@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 const ONE_SECOND = 1000;
@@ -7,13 +7,11 @@ const STAGGER = 0.025;
 
 export default function AnimatedText({ phrases, classNames }: any) {
   const countRef = useRef(0);
-  const activeRef = useRef(0);
-  const [activePhrase, setActivePhrase] = React.useState(phrases[0]);
+  const [active, setActive] = useState(0);
 
   useEffect(() => {
     const intervalRef = setInterval(() => {
-      activeRef.current = (activeRef.current + 1) % phrases.length;
-      setActivePhrase(phrases[activeRef.current]);
+      setActive((pv) => (pv + 1) % phrases.length);
     }, WAIT_TIME);
 
     return () => clearInterval(intervalRef);
@@ -24,7 +22,7 @@ export default function AnimatedText({ phrases, classNames }: any) {
       className={`flex flex-wrap items-center justify-center gap-2 ${classNames}`}
     >
       <AnimatePresence mode="popLayout">
-        {activePhrase.split(" ").map((word: string, wordIndex: number) => {
+        {phrases[active].split(" ").map((word: string, wordIndex: number) => {
           if (wordIndex === 0) {
             countRef.current = 0;
           }
