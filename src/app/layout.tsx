@@ -6,6 +6,7 @@ import ThemeContextProvider from "@/components/theme-context";
 import ActiveSectionContextProvider, {
   ActiveSectionContext,
 } from "@/components/active-section-context";
+import ThemeSwitch from "@/components/theme-switch";
 
 export const metadata: Metadata = {
   title: "Yeoh Han Yi",
@@ -27,6 +28,7 @@ export default function RootLayout({
           <ActiveSectionContextProvider>
             <Header />
             {children}
+            <ThemeSwitch />
             <Footer />
           </ActiveSectionContextProvider>
         </ThemeContextProvider>
