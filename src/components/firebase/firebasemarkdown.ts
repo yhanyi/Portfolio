@@ -12,13 +12,16 @@ export const saveMarkdownToFirestore = async (
 
     if (docSnap.exists()) {
       const data = docSnap.data();
-      if (data.password !== password) {
+      if (!password) {
+        alert("Please enter the password to save.");
+        throw new Error("Please enter the password to save.");
+      } else if (password !== data.password) {
         alert("Incorrect password. Please try again.");
         throw new Error("Incorrect password. Please try again.");
       }
 
       await setDoc(docRef, {
-        ...data, // Preserve existing fields
+        ...data,
         content: content,
         timestamp: new Date(),
       });
@@ -34,7 +37,6 @@ export const saveMarkdownToFirestore = async (
   }
 };
 
-// Function to retrieve markdown content from Firestore
 export const getMarkdownFromFirestore = async () => {
   try {
     const docRef = doc(firestore, "todolist", "todolist");
