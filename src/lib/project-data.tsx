@@ -174,10 +174,10 @@ export const projects = [
     ),
   },
   {
-    title: "Personal Portfolio",
+    title: "Portfolio Website",
     imgSrc: portfolio4,
     code: null,
-    projectLink: "https://yeohhanyi.vercel.app/",
+    projectLink: "https://yeohhanyi.dev/",
     tags: [
       {
         srclight: "/skills-images/nextjs.svg",
