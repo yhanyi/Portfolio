@@ -1,25 +1,27 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React from "react";
 import { Project } from "@/components/project";
 import { projects } from "@/lib/project-data";
+import { motion } from "framer-motion";
 
 export default function Home() {
-  // FIXME: Temporary fix to load pages at the top.
-  useEffect(() => {
-    const positionString = localStorage.getItem("positon")!;
-    const position = parseInt(positionString, 10);
-    setTimeout(() => window.scrollTo(0, position), 0);
-  }, []);
-
   return (
-    <main className="mt-28 sm:mt-36 flex flex-col px-4">
+    <main className="flex flex-col px-4 max-w-4xl mx-auto">
       <div className="flex items-center justify-center">
-        <span className="rounded-xl text-center p-2 mb-10 font-bold text-2xl text-dark dark:text-light">
+        <span className="rounded-xl text-center p-2 font-bold text-2xl text-dark dark:text-light">
           Projects
         </span>
       </div>
-      <div className="grid gap-12 grid-cols-1 md:grid-cols-2">
+      <motion.div
+        className="flex flex-col justify-center items-center"
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.175 }}
+      >
+        I try my hand at projects sometimes too!
+      </motion.div>
+      <div className="mt-10 grid gap-12 grid-cols-1 md:grid-cols-2">
         {projects.map((project) => {
           return <Project key={project.title} {...project} />;
         })}
