@@ -22,7 +22,7 @@ export default function Header() {
       <div className="flex flex-col md:flex-row items-center justify-center py-4 md:py-8 px-2 md:px-10 border rounded-xl">
         <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8">
           <img
-            src="https://via.placeholder.com/150"
+            src="/pfp.jpg"
             alt="Profile Picture"
             className="w-24 h-24 md:w-32 md:h-32 rounded-full"
           />
