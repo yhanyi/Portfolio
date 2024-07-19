@@ -8,6 +8,7 @@ export const experiencesData = [
       "• Engineered and deployed object-based alert throttling algorithms for a fleet of security robots, enhancing real-time object detection.",
       "• Executed extensive testing and benchmarking of cutting-edge computer vision models, including YOLOv10, to rigorously evaluate their suitability for production.",
       "• Performed comprehensive data preparation, including cleaning, preprocessing, augmentation, and pipelining of image datasets, to facilitate custom model development and deployment.",
+      "• Trained and deployed YOLO models on AWS SageMaker, executing backend migrations to enable seamless integration of video analytics modules and leveraging endpoints for real-time predictions",
       "• Authored detailed documentation and optimized codebases, reducing technical debt and ensuring scalable future development.",
       "• Worked in and collaborated with small cross-functional teams using AGILE methodology to integrate software with hardware and ensure efficient operation of the robots.",
     ],
