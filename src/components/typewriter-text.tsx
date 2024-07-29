@@ -5,7 +5,13 @@ const ONE_SECOND = 1000;
 const WAIT_TIME = ONE_SECOND * 2;
 const STAGGER = 0.025;
 
-export default function AnimatedText({ phrases, classNames }: any) {
+export default function AnimatedTextAnimatedText({
+  phrases,
+  classNames,
+}: {
+  phrases: string[];
+  classNames: string;
+}) {
   const countRef = useRef(0);
   const [active, setActive] = useState(0);
 

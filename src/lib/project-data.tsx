@@ -7,13 +7,15 @@ import portfolio4 from "/public/project-images/portfolio-4.png";
 import senpaigpt from "/public/project-images/senpaigpt.png";
 import tradingbotnotebook from "/public/project-images/tradingbotnotebook.png";
 import placeholder from "/public/project-images/placeholder.png";
+import paperhans from "/public/project-images/paperhans.png";
+import notstonks from "/public/project-images/notstonks.png";
 
 export const projects = [
   {
     title: "PaperHans",
-    imgSrc: placeholder,
-    code: null,
-    projectLink: null,
+    imgSrc: paperhans,
+    code: "https://github.com/yhanyi/PaperHans",
+    projectLink: "https://paperhans-398bbd34ef59.herokuapp.com/",
     tags: [
       {
         srclight: "/skills-images/python.svg",
@@ -41,9 +43,9 @@ export const projects = [
         title: "Pytorch",
       },
       {
-        srclight: "/skills-images/flask.svg",
-        srcdark: "/skills-images/flask-dark.svg",
-        title: "Flask",
+        srclight: "/skills-images/fastapi.svg",
+        srcdark: "/skills-images/fastapi.svg",
+        title: "FastAPI",
       },
       {
         srclight: "/skills-images/alpaca.svg",
@@ -60,18 +62,48 @@ export const projects = [
         srcdark: "/skills-images/firebase.svg",
         title: "Firebase",
       },
+      {
+        srclight: "/skills-images/heroku.svg",
+        srcdark: "/skills-images/heroku.svg",
+        title: "Heroku",
+      },
+      {
+        srclight: "/skills-images/googlecloud.svg",
+        srcdark: "/skills-images/googlecloud.svg",
+        title: "GCP",
+      },
     ],
-    description: "[WIP] Orbital project.",
+    description: "My orbital project.",
     modalContent: (
       <>
         <p>May 2024 - Present</p>
-        <p>My Orbital project. Not disclosing it for now.</p>
+        <p>
+          Done over summer 2024. I was responsible for the entire Python
+          backend, writing API endpoints using FastAPI, as well as the initial
+          frontend structure, routing and navigation. I wrote the backtesting
+          algorithm and implemented sentiment analysis on the news that was
+          retrieved from NewsAPI.
+        </p>
+        <p>
+          Shame a lot of the LLM stuff I had implemented earlier had to be
+          removed since the frontend dependencies really started stacking up
+          near the end, causing the project to hit deployment limits -_-.
+        </p>
+        <p>
+          This project really turned into a nightmare at the end when Heroku
+          consistently failed to deploy both the NextJS frontend and Python
+          backend concurrently with correct routing and without hitting slug
+          limits caused by overutilisation of dependencies. The backend was
+          hosted onto Google Cloud Platform at the last minute (big thanks to
+          Dominic).
+        </p>
+        <p>Overall, mid experience.</p>
       </>
     ),
   },
   {
-    title: "???",
-    imgSrc: placeholder,
+    title: "NotStonks",
+    imgSrc: notstonks,
     code: null,
     projectLink: null,
     tags: [
@@ -81,7 +113,7 @@ export const projects = [
         title: "C++",
       },
     ],
-    description: "[WIP] Mini project I'm doing over the summer break for fun.",
+    description: "Simple trading engine with order book system in C++.",
     modalContent: (
       <>
         <p>May 2024 - Present</p>
@@ -89,15 +121,22 @@ export const projects = [
           I like C++ so it makes sense for me to try making some stuff in C++
           right?
         </p>
+        <p>
+          Has a lot of random quantitative finance stuff, not necessarily
+          working though lol.
+        </p>
+        <p>
+          I initially called the project something else but I changed it to
+          avoid getting flamed when I applied for their company.
+        </p>
       </>
     ),
   },
   {
     title: "Pytorch Trading Bot",
     imgSrc: tradingbotnotebook,
-    code: "https://github.com/yhanyi/MLNotebooks/blob/main/TradingBotTutorial.ipynb",
-    projectLink:
-      "https://colab.research.google.com/github/yhanyi/MLNotebooks/blob/main/TradingBotTutorial.ipynb",
+    code: null,
+    projectLink: null,
     tags: [
       {
         srclight: "/skills-images/python.svg",

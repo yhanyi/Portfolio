@@ -6,7 +6,7 @@ import { links } from "@/lib/links-data";
 import Link from "next/link";
 import clsx from "clsx";
 import { useActiveSectionContext } from "@/components/active-section-context";
-import TypewriterText from "./typewriter-text";
+import AnimatedText from "./typewriter-text";
 
 export default function Header() {
   const { activeSection, setActiveSection, setTimeOfLastClick } =
@@ -22,17 +22,19 @@ export default function Header() {
       <div className="flex flex-col md:flex-row items-center justify-center py-4 md:py-8 px-2 md:px-10 border rounded-xl">
         <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8">
           <img
-            src="/pfp.jpg"
+            src="/pfp.png"
             alt="Profile Picture"
             className="w-24 h-24 md:w-32 md:h-32 rounded-full"
           />
           <div className="flex flex-col items-center gap-2 md:items-start">
             <h1 className="text-2xl md:text-4xl font-bold">Yeoh Han Yi</h1>
             <div>
-              <TypewriterText
+              {" "}
+              I&apos;m interested in
+              <AnimatedText
                 phrases={[
                   "Machine Learning",
-                  "Quantitative Development",
+                  "Quant Development",
                   "Artificial Intelligence",
                   "Algorithm Theory",
                   "Software Engineering",
